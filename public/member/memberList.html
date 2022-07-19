@@ -6,7 +6,7 @@
 	<title>memberList</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<style type ="text/css">
-		#h1 {
+		h1 {
 			font-family: 'Happiness-Sans-Bold';
 		}
 		
@@ -31,6 +31,11 @@
   			text-decoration: underline;
 		}
 		
+		table {
+			margin: auto;
+		}
+		
+		
 	</style>
 </head>
 
@@ -40,49 +45,56 @@
 	
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-		<a class="navbar-brand"><i class="fa-brands fa-apple"></i> MENU</a>
+		<a class="navbar-brand">MENU</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarColor01">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
 				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="memberList.html">Home</a>
+					<a class="nav-link active" aria-current="page" href="memberList.html">회원관리</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="memberReg.html">Apply</a>
+					<a class="nav-link">코드그룹관리</a>
 				</li>
-			</ul>
+				<li class="nav-item">
+					<a class="nav-link">코드관리</a>
+				</li>
 		</div>
 		</div>
 	</nav>
-  
-  <br>
-	
-	<div id="h1">
-		<ul class="nav nav-tabs">
-			<li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="memberList.html">코드그룹관리</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">코드관리</a>
-				<ul class="dropdown-menu">
-					<li><a class="dropdown-item" href="#">Action</a></li>
-					<li><a class="dropdown-item" href="#">Something else here</a></li>
-					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="#">Separated link</a></li>
-				</ul>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link">회원관리</a>
-			 </li>
-			
-		</ul>
-	</div>
-
-	</div>
+  		<button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" style="float:right;"><i class="fa-solid fa-user"></i> LOGIN</button>
+			<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+			  <div class="offcanvas-header">
+			    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">LOGIN</h5>
+			    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			  </div>
+			  <div class="offcanvas-body">
+			    <h2><center><i class="fa-solid fa-circle-user"></i> User</center></h2>
+			    <br>
+			    <br>
+			    <div class="input-group input-group-sm mb-3">
+				  <span class="input-group-text" id="inputGroup-sizing-sm">ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+				</div>
+				<div class="input-group input-group-sm mb-3">
+					<span class="input-group-text" id="inputGroup-sizing-sm">Password</span>
+					<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+					<br>
+					<br>
+				</div>
+				<button type="button" class="btn btn-outline-dark btn-sm">로그인</button>
+				<button type="button" class="btn btn-outline-dark btn-sm">취소</button>
+			  </div>
+			</div>
+	<br>
+	<br>
+	<br>
+	<h1><center><i class="fa-brands fa-apple"></i></center></h1>
 
 	<!-- 검색창 -->
+	<div class="container">
 		<div class="input-group mb-3" style="margin-top: 100px;">
 			<div class="col-1 input-group-sm">
 			  <select class="form-select" id="inputGroupSelect02">
@@ -91,7 +103,7 @@
 			    <option value="2">경력</option>
 			  </select>
 			</div>
-			<div class="col-1 input-group-sm">
+			<div class="col-2 input-group-sm">
 			  <select class="form-select" id="inputGroupSelect02">
 			    <option selected>지원분야</option>
 			    <option value="1">영업</option>
@@ -102,7 +114,7 @@
 			    <option value="6">앱개발</option>
 			  </select>
 			</div>
-			<div class="col-1 input-group-sm">
+			<div class="col-2 input-group-sm">
 			  <select class="form-select" id="inputGroupSelect02">
 			    <option selected>희망근무지</option>
 			    <option value="1">서울</option>
@@ -113,46 +125,23 @@
 			</div>
 		</div>
 
-	<div class="input-group input-group-sm mb-3" style="width:60px; float:left;">
-  		<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="등록일">
-	</div>
-	
-	<div class="input-group input-group-sm mb-3" style="width:150px; float:left;">
-  		<input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-	</div>
-	<div class="input-group input-group-sm mb-3" style="width:150px; float:left;">
-  		<input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-	</div>
-
-	<div class="input-group input-group-sm mb-3" style="width:220px;">
-	  <input type="text" class="form-control" placeholder="키워드 입력" aria-label="Recipient's username" aria-describedby="button-addon2">
-	  <button class="btn btn-dark" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i> search</button>
-	</div>
-
-	<!-- Button trigger modal -->
-	<button type="button" class="btn btn-danger" style="float:right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-	   삭제 <i class="fa-solid fa-trash"></i>
-	</button>
-
-	<!-- Modal -->
-	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="staticBackdropLabel">Data Delete</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-			<div class="modal-body"> 정말 삭제하시겠습니까? </div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-					<button type="button" class="btn btn-primary">Yes</button>
-				</div>
-			</div>
+		<div class="input-group input-group-sm mb-3" style="width:60px; float:left;">
+	  		<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="등록일">
 		</div>
-	</div>
+		
+		<div class="input-group input-group-sm mb-3" style="width:140px; float:left;">
+	  		<input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+		</div>
+		<div class="input-group input-group-sm mb-3" style="width:140px; float:left;">
+	  		<input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+		</div>
 	
-	<a class="btn btn-secondary" href="memberReg.html" role="button" style="float:right;">등록 <i class="fa-solid fa-plus"></i></a>
-
+		<div class="input-group input-group-sm mb-3" style="width:197px;">
+		 	<input type="text" class="form-control" placeholder="키워드 입력" aria-label="Recipient's username" aria-describedby="button-addon2">
+		 	<button class="btn btn-dark" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+			<button type="button" class="btn btn-dark btn-sm"><i class="fa-solid fa-rotate-left"></i></button>
+		</div>
+		
 	<hr>
 	
 	<!-- 테이블 -->
@@ -275,6 +264,35 @@
 	    </li>
 	  </ul>
 
+<!-- Button trigger modal -->
+	<button type="button" class="btn btn-danger" style="float:right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+	   <i class="fa-solid fa-x"></i>
+	</button>
+	<button type="button" class="btn btn-danger" style="float:right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+	   <i class="fa-solid fa-trash"></i>
+	</button>
+
+	<!-- Modal -->
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel">Data Delete</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+			<div class="modal-body"> 정말 삭제하시겠습니까? </div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+					<button type="button" class="btn btn-primary">Yes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<a class="btn btn-success" role="button" style="float:left;"><i class="fa-solid fa-file-excel"></i></a> 
+	<a class="btn btn-primary" role="button" href="memberReg.html" style="float:left;"><i class="fa-solid fa-plus"></i></a>
+</div>
+	
 	<script type="text/javascript">
 		const myModal = document.getElementById('myModal')
 		const myInput = document.getElementById('myInput')
