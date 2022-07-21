@@ -7,7 +7,572 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>memberReg</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<style type ="text/css">
+		h1 {
+			font-family: 'Happiness-Sans-Bold';
+		}
+		
+		@font-face {
+		    font-family: 'Happiness-Sans-Bold';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
+		    font-weight: 700;
+		    font-style: normal;
+		}
+		
+		@font-face {
+		    font-family: 'MICEGothic Bold';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+		    font-weight: 700;
+		    font-style: normal;
+		}
+				
+		@font-face {
+		    font-family: 'NEXON Lv2 Gothic Bold';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+		}
 
+		span {
+			font-size: 23px;
+			font-weight : bold;
+			font-family: 'MICEGothic Bold';
+
+		}
+	
+		label {
+			font-family: 'NEXON Lv2 Gothic Bold';
+			font-size: 19px;
+		}	
+		
+		.row {
+			margin-left: 30px;
+		}
+		
+		#sort {
+			text-align: center;
+			margin-left: 5rem;
+		}
+		
+		.back-to-top-css {
+		    position: fixed;
+		    bottom: 20px;
+		    right: 20px;
+		}
+			
+	</style>
+</head>
+
+<body>
+<body style="background-image:url(../image/apple0.jpg); background-attachment: fixed;">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+		<a class="navbar-brand"><i class="fa-brands fa-apple"></i> MENU</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarColor01">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="memberList.html">회원관리</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">코드그룹관리</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">코드관리</a>
+				</li>
+		</div>
+		</div>
+	</nav>
+	<br>
+	<br>
+	<br>
+	<h1><center><i class="fa-brands fa-apple"></i> Apple</center></h1>
+	<br>
+	<br>
+	<div class="container">
+		<!-- 기본정보 -->
+		<div class="container" style="border:4px solid #353535; border-radius:10px; padding-top: 20px; padding-bottom: 15px;">
+			<span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-check"></i> 기본정보(* 필수)</span>
+			<br>
+			<br>
+			<br>
+			<form autocomplete="off" class="row g-3 needs-validation" novalidate>
+				<div class="row">
+					<div class="col-11">
+				   		<label for="pic" class="form-label"><i class="fa-solid fa-angle-right"></i> 증명사진 (규격: 가로 115px, 세로 140px)</label>
+						<input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
+						<div class="invalid-feedback">필수 항목입니다.</div>
+				   	</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-3">
+						<label for="name" class="form-label"><i class="fa-solid fa-angle-right"></i> 성명 (한글)</label>
+						<input type="text" class="form-control" id="validationCustom01" aria-label="Username" required>
+						<div class="invalid-feedback">필수 항목입니다.</div>
+					</div>
+					<div class="col-5">
+					   	<label for="name" class="form-label"><i class="fa-solid fa-angle-right"></i> 성명 (영문)</label>
+						<input type="text" class="form-control" id="validationCustom01" aria-label="Username" required>
+						<div class="invalid-feedback">필수 항목입니다.</div>
+					</div>
+					<div class="col-3">
+						<label for="name" class="form-label"><i class="fa-solid fa-angle-right"></i> 성명 (한자)</label>
+						<input type="text" class="form-control" id="validationCustom01" aria-label="Username" required>
+						<div class="invalid-feedback">필수 항목입니다.</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-3">
+						<label for="Userdob" class="form-label"><i class="fa-solid fa-angle-right"></i> 생년월일</label>
+			  			<input type="date" class="form-control" aria-label="Userdob" required>
+			  			<div class="invalid-feedback">필수 항목입니다.</div>
+	  				</div>
+	  				<div class="col-3">
+	  					<label for="mobile" class="form-label"><i class="fa-solid fa-angle-right"></i> 핸드폰번호</label>
+						<select class="form-select" aria-label="validationCustom04" required>
+						  <option selected>010</option>
+						  <option value="2">070</option>
+						  <option value="3">02</option>
+						  <option value="4">기타</option>
+						</select> 
+						<div class="invalid-feedback">필수 항목입니다.</div>
+					</div> 	
+					<div class="col-5" style="margin-top: 12px;">
+						<label for="mobile" class="form-label"> </label>
+				 		<input type="text" class="form-control" aria-label="Usermobile" required>
+				 		<div class="invalid-feedback">필수 항목입니다.</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-11">
+					    <label for="validationDefaultUsername" class="form-label"><i class="fa-solid fa-angle-right"></i> 이메일</label>
+					    <div class="input-group">
+					   		<input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+					    	<div class="invalid-feedback">필수 항목입니다.</div>
+					      	<span class="input-group-text" id="inputGroupPrepend2">@</span>
+					      	<select class="form-select" aria-label=".form-select example" required>
+								<option selected>naver.com</option>
+								<option value="1">nate.com</option>
+								<option value="2">hanmail.com</option>
+								<option value="3">gmail.com</option>
+								<option value="4">직접 입력</option>
+							</select> 
+					    </div>
+				  	</div>
+				</div>	
+				<br>
+				<div class="row">
+					<div class="col-2">
+						<label for="addr" class="form-label"><i class="fa-solid fa-angle-right"></i> 주소</label>
+						<input type="text" class="form-control" aria-label="addr" required> 
+						<div class="invalid-feedback">필수 항목입니다.</div>
+					</div> 
+					<div class="col-3">
+						<label for="addr" class="form-label" style="margin-top: 52px;"></label>
+						<a type="button" class="btn btn-dark" onClick="post()">우편번호 검색</a>
+					</div> 
+				</div>
+				<div class="row">
+					<div class="col-11 gy-1">
+						<input type="text" class="form-control" placeholder="상세주소" aria-label="addr" required>
+						<div class="invalid-feedback">필수 항목입니다.</div>
+					</div> 
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-3">
+						<label for="dept" class="form-label"><i class="fa-solid fa-angle-right"></i> 지원분야</label>
+							<select class="form-select" aria-label=".form-select example" required>
+								<option selected>영업</option>
+								<option value="1">회계</option>
+								<option value="2">백엔드</option>
+								<option value="3">정보보안</option>
+								<option value="4">프론트엔드</option>
+							</select> 
+					</div> 
+					<div class="col-4">
+						<label for="salary" class="form-label"><i class="fa-solid fa-angle-right"></i> 희망연봉</label>
+						<input type="text" class="form-control" aria-label="salary" required>
+						<div class="invalid-feedback">필수 항목입니다.</div> 
+					</div> 
+					<div class="col-4">
+						<label for="wday" class="form-label"><i class="fa-solid fa-angle-right"></i> 근무 가능 시기</label>
+						<input type="date" class="form-control" aria-label="wday" required>
+						<div class="invalid-feedback">필수 항목입니다.</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-11">
+				   		<label for="statement" class="form-label"><i class="fa-solid fa-angle-right"></i> 자기소개서 (pdf 파일로 첨부)</label>
+						<input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
+						<div class="invalid-feedback">필수 항목입니다.</div>
+				   	</div>
+				</div>
+				<div class="gy-5">
+	  			  <button class="btn btn-success" type="submit" style="margin-left: 67.5rem;">저장</button>
+	  			</div>
+			</form>
+		</div>
+			<!-- 학력 -->
+		<br>
+		<br>
+		<div class="container" style="border:4px solid #353535; border-radius:10px; padding-top: 20px; padding-bottom: 10px;">
+			<span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-check"></i> 학력 (최신 이력이 가장 위로)</span>
+			<form autocomplete="off">
+				<br>
+				<div class="row" id="sort">
+					 <div class="col-3">
+					 	<span class="input-group-text" id="inputGroupPrepend2">기간</span>
+				 		<div class="input-group">
+						 	<input type="date" class="form-control" aria-label="period">&nbsp;~&nbsp;
+						 	<input type="date" class="form-control" aria-label="period">
+					 	</div>
+					 	<div class="input-group">
+						 	<input type="date" class="form-control" aria-label="period">&nbsp;~&nbsp;
+						 	<input type="date" class="form-control" aria-label="period">
+					 	</div>
+					 </div>
+					<div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">출신학교</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="school"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="school"> 
+						</div> 
+					</div>
+					<div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">졸업여부</span>
+						<div class="input-group">
+							<select class="form-select" aria-label=".form-select example">
+							<option selected>졸업</option>
+								<option value="1">졸업예정</option>
+								<option value="2">유예</option>
+							</select>  
+						</div> 
+						<div class="input-group">
+							<select class="form-select" aria-label=".form-select example">
+							<option selected>졸업</option>
+								<option value="1">졸업예정</option>
+								<option value="2">유예</option>
+							</select>  
+						</div> 
+					</div>
+					<div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">학과</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="major"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="major"> 
+						</div> 
+					</div>
+					<div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">소재지</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="local"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="local"> 
+						</div> 
+					</div>
+				</div>
+				<br>
+			</form>
+		</div>
+		<br>
+		<br>
+		<div class="container" style="border:4px solid #353535; border-radius:10px; padding-top: 20px; padding-bottom: 10px;">
+			<span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-check"></i> 교육연수</span>
+			<form autocomplete="off">
+				<br>
+				<div class="row" id="sort">
+					 <div class="col-3">
+					 	<span class="input-group-text" id="inputGroupPrepend2">연수기간</span>
+				 		<div class="input-group">
+						 	<input type="date" class="form-control" aria-label="period2">&nbsp;~&nbsp;
+						 	<input type="date" class="form-control" aria-label="period2">
+					 	</div>
+					 	<div class="input-group">
+						 	<input type="date" class="form-control" aria-label="period2">&nbsp;~&nbsp;
+						 	<input type="date" class="form-control" aria-label="period2">
+					 	</div>
+					 </div>
+					<div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">연수기관</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="institute"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="institute"> 
+						</div> 
+					</div>
+					<div class="col-6">
+						<span class="input-group-text" id="inputGroupPrepend2">연수과정 및 내용</span>
+						<div class="input-group">
+							<textarea class="form-control" aria-label="With textarea"></textarea> 
+						</div> 
+						<div class="input-group">
+							<textarea class="form-control" aria-label="With textarea"></textarea> 
+						</div> 
+					</div>
+				</div>
+				<br>
+			</form>
+		</div>
+		<br>
+		<br>
+		<div class="container" style="border:4px solid #353535; border-radius:10px; padding-top: 20px; padding-bottom: 10px;">
+			<span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-check"></i> 자격사항</span>
+			<form autocomplete="off">
+				<br>
+				<div class="row" id="sort">
+					 <div class="col-2">
+					 	<span class="input-group-text" id="inputGroupPrepend2">취득일</span>
+				 		<div class="input-group">
+						 	<input type="date" class="form-control" aria-label="day">
+					 	</div>
+					 	<div class="input-group">
+						 	<input type="date" class="form-control" aria-label="day">
+					 	</div>
+					 </div>
+					<div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">종류 및 등급</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="grade"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="grade"> 
+						</div> 
+					</div>
+					<div class="col-3">
+						<span class="input-group-text" id="inputGroupPrepend2">발행처</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="issue"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="issue"> 
+						</div> 
+					</div>
+					<div class="col-4">
+						<span class="input-group-text" id="inputGroupPrepend2">보유기술 및 수준</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="level"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="level"> 
+						</div> 
+					</div>
+				</div>
+				<br>
+			</form>
+		</div><br>
+		<br>
+		<div class="container" style="border:4px solid #353535; border-radius:10px; padding-top: 20px; padding-bottom: 10px;">
+			<span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-check"></i> 경력(4대 보험 가입 경력)</span>
+			<form autocomplete="off">
+				<br>
+				<div class="row" id="sort">
+					 <div class="col-3">
+					 	<span class="input-group-text" id="inputGroupPrepend2">활동기간</span>
+				 		<div class="input-group">
+						 	<input type="date" class="form-control" aria-label="period3">&nbsp;~&nbsp;
+						 	<input type="date" class="form-control" aria-label="period3">
+					 	</div>
+					 	<div class="input-group">
+						 	<input type="date" class="form-control" aria-label="period3">&nbsp;~&nbsp;
+						 	<input type="date" class="form-control" aria-label="period3">
+					 	</div>
+					 </div>
+					 <div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">기관</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="institute2"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="institute2"> 
+						</div> 
+					</div>
+					<div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">담당업무</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="work"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="work"> 
+						</div> 
+					</div>
+					<div class="col-4">
+						<span class="input-group-text" id="inputGroupPrepend2">경력 및 습득역량</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="career"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="career"> 
+						</div>
+						<br> 
+					</div>
+				</div>
+			</form>
+		</div>
+		<br>
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-danger" style="float:right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+			   <i class="fa-solid fa-x"></i>
+			</button>
+			<button type="button" class="btn btn-danger" style="float:right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+			   <i class="fa-solid fa-trash"></i>
+			</button>
+		
+			<!-- Modal -->
+				<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="staticBackdropLabel">Data Delete</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+						<div class="modal-body"> 정말 삭제하시겠습니까? </div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+								<button type="button" class="btn btn-primary">Yes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			<a class="btn btn-success" role="button" style="float:left;"><i class="fa-solid fa-file-excel"></i></a> 
+			<a class="btn btn-info" role="button" href="memberReg.html" style="float:left;"><i class="fa-solid fa-plus"></i></a>
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			  <i class="fa-solid fa-registered"></i>
+			</button>
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Submit</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        저장되었습니다. 
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onClick="save()">확인</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<a id="back-to-top" href="#" class="btn btn-outline-dark btn-sm back-to-top-css" role="button" title="Move Top" data-toggle="tooltip" data-placement="left">
+				<span class="glyphicon glyphicon-chevron-up"><i class="fa-solid fa-angles-up"></i><br>TOP</span>
+			</a>
+			
+	</div>
+
+	<script type="text/javascript">
+		//Example starter JavaScript for disabling form submissions if there are invalid fields
+		(() => {
+		  'use strict'
+		
+		  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+		  const forms = document.querySelectorAll('.needs-validation')
+		
+		  // Loop over them and prevent submission
+		  Array.from(forms).forEach(form => {
+		    form.addEventListener('submit', event => {
+		      if (!form.checkValidity()) {
+		        event.preventDefault()
+		        event.stopPropagation()
+		      }
+		
+		      form.classList.add('was-validated')
+		    }, false)
+		  })
+		})()
+		
+		const myModal = document.getElementById('myModal')
+		const myInput = document.getElementById('myInput')
+	
+		myModal.addEventListener('shown.bs.modal', () => {
+		  myInput.focus()
+		})
+		
+		$(function(){
+		    $("[type=checkbox][name=check]").on("change", function(){ 
+		        var check = $(this).prop("checked"); 
+		        //전체 체크
+		        if($(this).hasClass("allcheck")){ 
+		            $("[type=checkbox][name=check]").prop("checked", check);
+	
+		        //단일 체크
+		        }else{ 
+		            var all = $("[type=checkbox][name=check].allcheck");
+		            var allcheck = all.prop("checked")
+		            if(check != allcheck){ 
+		                var len = $("[type=checkbox][name=check]").not(".allcheck").length; 
+		                var ckLen = $("[type=checkbox][name=check]:checked").not(".allcheck").length; 
+		                if(len === ckLen){ 
+		                    all.prop("checked", true);
+		                }else{
+		                    all.prop("checked", false);
+		                }
+		            }
+		        }
+		    });
+		});
+
+		function post()
+		{
+		     location.href = "https://www.epost.go.kr/search.RetrieveIntegrationNewZipCdList.comm";
+		}
+		
+		function save()
+		{
+		     location.href = "memberView.html";
+		}
+		
+		
+		 $(document).ready(function () {
+		        $(window).scroll(function () {
+		            if ($(this).scrollTop() > 50) {
+		                $('#back-to-top').fadeIn();
+		            } else {
+		                $('#back-to-top').fadeOut();
+		            }
+		        });
+		        // scroll body to 0px on click
+		        $('#back-to-top').click(function () {
+		            $('#back-to-top').tooltip('hide');
+		            $('body,html').animate({
+		                scrollTop: 0
+		            }, 800);
+		            return false;
+		        });
+
+		        $('#back-to-top').tooltip('show');
+
+		    });
+		
+	</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/d843c66cc1.js" crossorigin="anonymous"></script>
+</body>
+</html>
  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

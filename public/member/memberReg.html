@@ -35,6 +35,7 @@
 			font-size: 23px;
 			font-weight : bold;
 			font-family: 'MICEGothic Bold';
+
 		}
 	
 		label {
@@ -42,14 +43,24 @@
 			font-size: 19px;
 		}	
 		
-		#box {
-			border-radius: 10px;
-		}
-		
 		.row {
 			margin-left: 30px;
 		}
-	
+		
+		#sort {
+			text-align: center;
+			margin-left: 5rem;
+		}
+		
+		.back-to-top-css {
+		    position: fixed;
+		    bottom: 20px;
+		    right: 20px;
+		}
+			
+		.btn-space {
+		    margin-right: 5px;
+		}
 	</style>
 </head>
 
@@ -84,13 +95,13 @@
 	<div class="container">
 		<!-- 기본정보 -->
 		<div class="container" style="border:4px solid #353535; border-radius:10px; padding-top: 20px; padding-bottom: 15px;">
-			<span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-check"></i> 기본정보</span>
+			<span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-check"></i> 기본정보(* 필수)</span>
 			<br>
 			<br>
 			<br>
 			<form autocomplete="off" class="row g-3 needs-validation" novalidate>
 				<div class="row">
-					<div class="col-11">
+					<div class="col-3">
 				   		<label for="pic" class="form-label"><i class="fa-solid fa-angle-right"></i> 증명사진 (규격: 가로 115px, 세로 140px)</label>
 						<input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
 						<div class="invalid-feedback">필수 항목입니다.</div>
@@ -216,13 +227,61 @@
 			<span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-check"></i> 학력 (최신 이력이 가장 위로)</span>
 			<form autocomplete="off">
 				<br>
-				<div class="row">
-					<div class="grid text-center" style="row-gap: 0;">
-						 <div class="col-2">
-						 	<span class="input-group-text" id="inputGroupPrepend2">기간</span>
+				<div class="row" id="sort">
+					 <div class="col-3">
+					 	<span class="input-group-text" id="inputGroupPrepend2">기간</span>
+				 		<div class="input-group" id="t1">
+						 	<input type="date" class="form-control" aria-label="period">&nbsp;~&nbsp;
 						 	<input type="date" class="form-control" aria-label="period">
+					 	</div>
+					 	<div class="input-group">
+						 	<input type="date" class="form-control" aria-label="period">&nbsp;~&nbsp;
 						 	<input type="date" class="form-control" aria-label="period">
-						 </div>
+					 	</div>
+					 </div>
+					<div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">출신학교</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="school"> 
+						</div>  
+						<div class="input-group" id="t1">
+							<input type="text" class="form-control" aria-label="school"> 
+						</div> 
+					</div>
+					<div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">졸업여부</span>
+						<div class="input-group">
+							<select class="form-select" aria-label=".form-select example">
+							<option selected>졸업</option>
+								<option value="1">졸업예정</option>
+								<option value="2">유예</option>
+							</select>  
+						</div> 
+						<div class="input-group">
+							<select class="form-select" aria-label=".form-select example">
+							<option selected>졸업</option>
+								<option value="1">졸업예정</option>
+								<option value="2">유예</option>
+							</select>  
+						</div> 
+					</div>
+					<div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">학과</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="major"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="major"> 
+						</div> 
+					</div>
+					<div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">소재지</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="local"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="local"> 
+						</div> 
 					</div>
 				</div>
 				<br>
@@ -232,28 +291,143 @@
 		<br>
 		<div class="container" style="border:4px solid #353535; border-radius:10px; padding-top: 20px; padding-bottom: 10px;">
 			<span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-check"></i> 교육연수</span>
-			<br>
-			<br>
+			<form autocomplete="off">
+				<br>
+				<div class="row" id="sort">
+					 <div class="col-3">
+					 	<span class="input-group-text" id="inputGroupPrepend2">연수기간</span>
+				 		<div class="input-group">
+						 	<input type="date" class="form-control" aria-label="period2">&nbsp;~&nbsp;
+						 	<input type="date" class="form-control" aria-label="period2">
+					 	</div>
+					 	<div class="input-group">
+						 	<input type="date" class="form-control" aria-label="period2">&nbsp;~&nbsp;
+						 	<input type="date" class="form-control" aria-label="period2">
+					 	</div>
+					 </div>
+					<div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">연수기관</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="institute"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="institute"> 
+						</div> 
+					</div>
+					<div class="col-6">
+						<span class="input-group-text" id="inputGroupPrepend2">연수과정 및 내용</span>
+						<div class="input-group">
+							<textarea class="form-control" aria-label="With textarea"></textarea> 
+						</div> 
+						<div class="input-group">
+							<textarea class="form-control" aria-label="With textarea"></textarea> 
+						</div> 
+					</div>
+				</div>
+				<br>
+			</form>
 		</div>
 		<br>
 		<br>
 		<div class="container" style="border:4px solid #353535; border-radius:10px; padding-top: 20px; padding-bottom: 10px;">
 			<span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-check"></i> 자격사항</span>
-			<br>
-			<br>
+			<form autocomplete="off">
+				<br>
+				<div class="row" id="sort">
+					 <div class="col-2">
+					 	<span class="input-group-text" id="inputGroupPrepend2">취득일</span>
+				 		<div class="input-group">
+						 	<input type="date" class="form-control" aria-label="day">
+					 	</div>
+					 	<div class="input-group">
+						 	<input type="date" class="form-control" aria-label="day">
+					 	</div>
+					 </div>
+					<div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">종류 및 등급</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="grade"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="grade"> 
+						</div> 
+					</div>
+					<div class="col-3">
+						<span class="input-group-text" id="inputGroupPrepend2">발행처</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="issue"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="issue"> 
+						</div> 
+					</div>
+					<div class="col-4">
+						<span class="input-group-text" id="inputGroupPrepend2">보유기술 및 수준</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="level"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="level"> 
+						</div> 
+					</div>
+				</div>
+				<br>
+			</form>
 		</div><br>
 		<br>
 		<div class="container" style="border:4px solid #353535; border-radius:10px; padding-top: 20px; padding-bottom: 10px;">
 			<span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-check"></i> 경력(4대 보험 가입 경력)</span>
-			<br>
-			<br>
+			<form autocomplete="off">
+				<br>
+				<div class="row" id="sort">
+					 <div class="col-3">
+					 	<span class="input-group-text" id="inputGroupPrepend2">활동기간</span>
+				 		<div class="input-group">
+						 	<input type="date" class="form-control" aria-label="period3">&nbsp;~&nbsp;
+						 	<input type="date" class="form-control" aria-label="period3">
+					 	</div>
+					 	<div class="input-group">
+						 	<input type="date" class="form-control" aria-label="period3">&nbsp;~&nbsp;
+						 	<input type="date" class="form-control" aria-label="period3">
+					 	</div>
+					 </div>
+					 <div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">기관</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="institute2"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="institute2"> 
+						</div> 
+					</div>
+					<div class="col-2">
+						<span class="input-group-text" id="inputGroupPrepend2">담당업무</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="work"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="work"> 
+						</div> 
+					</div>
+					<div class="col-4">
+						<span class="input-group-text" id="inputGroupPrepend2">경력 및 습득역량</span>
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="career"> 
+						</div> 
+						<div class="input-group">
+							<input type="text" class="form-control" aria-label="career"> 
+						</div>
+						<br> 
+					</div>
+				</div>
+			</form>
 		</div>
 		<br>
 			<!-- Button trigger modal -->
-			<button type="button" class="btn btn-danger" style="float:right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+			<button type="button" class="btn btn-danger btn-space" style="float:right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 			   <i class="fa-solid fa-x"></i>
 			</button>
-			<button type="button" class="btn btn-danger" style="float:right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+			<button type="button" class="btn btn-danger btn-space" style="float:right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 			   <i class="fa-solid fa-trash"></i>
 			</button>
 		
@@ -274,9 +448,35 @@
 					</div>
 				</div>
 				
-				<a class="btn btn-success" role="button" style="float:left;"><i class="fa-solid fa-file-excel"></i></a> 
-				<a class="btn btn-primary" role="button" href="memberReg.html" style="float:left;"><i class="fa-solid fa-plus"></i></a>
-		
+			<a class="btn btn-success btn-space " role="button" style="float:left;"><i class="fa-solid fa-file-excel"></i></a> 
+			<a class="btn btn-info btn-space" role="button" href="memberReg.html" style="float:left;"><i class="fa-solid fa-plus"></i></a>
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary btn-space" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			  <i class="fa-solid fa-registered"></i>
+			</button>
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Submit</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        저장되었습니다. 
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onClick="save()">확인</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<a id="back-to-top" href="#" class="btn btn-outline-dark btn-sm back-to-top-css" role="button" title="Move Top" data-toggle="tooltip" data-placement="left">
+				<span class="glyphicon glyphicon-chevron-up"><i class="fa-solid fa-angles-up"></i><br>TOP</span>
+			</a>
+			
+	</div>
+
 	<script type="text/javascript">
 		//Example starter JavaScript for disabling form submissions if there are invalid fields
 		(() => {
@@ -334,6 +534,32 @@
 		     location.href = "https://www.epost.go.kr/search.RetrieveIntegrationNewZipCdList.comm";
 		}
 		
+		function save()
+		{
+		     location.href = "memberView.html";
+		}
+		
+		 $(document).ready(function () {
+		        $(window).scroll(function () {
+		            if ($(this).scrollTop() > 50) {
+		                $('#back-to-top').fadeIn();
+		            } else {
+		                $('#back-to-top').fadeOut();
+		            }
+		        });
+		        // scroll body to 0px on click
+		        $('#back-to-top').click(function () {
+		            $('#back-to-top').tooltip('hide');
+		            $('body,html').animate({
+		                scrollTop: 0
+		            }, 800);
+		            return false;
+		        });
+
+		        $('#back-to-top').tooltip('show');
+
+		    });
+		 
 	</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
