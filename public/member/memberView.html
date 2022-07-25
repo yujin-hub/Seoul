@@ -57,7 +57,10 @@
 		    bottom: 20px;
 		    right: 20px;
 		}
-			
+		
+		#txt {
+			text-align: right;
+		}	
 	</style>
 </head>
 
@@ -72,7 +75,7 @@
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item">
 					<a class="nav-link active" aria-current="page" href="memberList.html">회원관리</a>
-				</li>
+				</li>E
 				<li class="nav-item">
 					<a class="nav-link">코드그룹관리</a>
 				</li>
@@ -91,7 +94,7 @@
 	<div class="container">
 		<!-- 기본정보 -->
 		<div class="container" style="border:4px solid #353535; border-radius:10px; padding-top: 20px; padding-bottom: 15px;">
-			<span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-check"></i> 기본정보(* 필수)</span>
+			<span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-check"></i> 기본정보 (* 필수)</span>
 			<br>
 			<br>
 			<br>
@@ -139,7 +142,7 @@
 					    <div class="input-group">
 							<input class="form-control" type="text" value="wotjr" aria-label="readonly input example" readonly>
 					      	<span class="input-group-text" id="inputGroupPrepend2">@</span>
-   							<input class="form-control" type="text" value="0000-0000" aria-label="readonly input example" readonly>
+   							<input class="form-control" type="text" value="naver.com" aria-label="readonly input example" readonly>
 					    </div>
 				  	</div>
 				</div>	
@@ -255,7 +258,9 @@
 					<div class="col-3">
 						<span class="input-group-text" id="inputGroupPrepend2">연수기관</span>
 						<div class="input-group">
-   							<input class="form-control" type="text" value="(주)이젠 아카데미(서울 강남역 본원)국가기간전략산업직종 훈련" aria-label="readonly input example" readonly>
+							<textarea class="form-control" aria-label="With textarea" readonly> (주)이젠 아카데미 
+							(서울 강남역 본원) 
+							국가기간전략산업직종 훈련</textarea>
 						</div> 
 					</div>
 					<div class="col-5">
@@ -365,57 +370,12 @@
 		</div>
 		<br>
 			<!-- Button trigger modal -->
-			<button type="button" class="btn btn-danger" style="float:right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-			   <i class="fa-solid fa-x"></i>
+			<button type="button" class="btn btn-danger btn-space" style="float:right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onClick="back()">
+			   <i class="fa-solid fa-rotate-left"></i>
 			</button>
 			<button type="button" class="btn btn-danger" style="float:right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 			   <i class="fa-solid fa-trash"></i>
 			</button>
-		
-			<!-- Modal -->
-				<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="staticBackdropLabel">Data Delete</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							</div>
-						<div class="modal-body"> 정말 삭제하시겠습니까? </div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-								<button type="button" class="btn btn-primary">Yes</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			<a class="btn btn-success" role="button" style="float:left;"><i class="fa-solid fa-file-excel"></i></a> 
-			<a class="btn btn-info" role="button" href="memberReg.html" style="float:left;"><i class="fa-solid fa-plus"></i></a>
-			<!-- Button trigger modal -->
-			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-			  <i class="fa-solid fa-registered"></i>
-			</button>
-			<!-- Modal -->
-			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			  <div class="modal-dialog">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h5 class="modal-title" id="exampleModalLabel">Submit</h5>
-			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			      </div>
-			      <div class="modal-body">
-			        저장되었습니다. 
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onClick="save()">확인</button>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-			<a id="back-to-top" href="#" class="btn btn-outline-dark btn-sm back-to-top-css" role="button" title="Move Top" data-toggle="tooltip" data-placement="left">
-				<span class="glyphicon glyphicon-chevron-up"><i class="fa-solid fa-angles-up"></i><br>TOP</span>
-			</a>
-			
 	</div>
 
 	<script type="text/javascript">
@@ -480,6 +440,10 @@
 		     location.href = "memberView.html";
 		}
 		
+		function back()
+		{
+		     location.href = "memberList.html";
+		}
 		
 		 $(document).ready(function () {
 		        $(window).scroll(function () {

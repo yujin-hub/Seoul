@@ -94,7 +94,7 @@
 	<div class="container">
 		<!-- 기본정보 -->
 		<div class="container" style="border:4px solid #353535; border-radius:10px; padding-top: 20px; padding-bottom: 15px;">
-			<span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-check"></i> 기본정보(* 필수)</span>
+			<span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-check"></i> 기본정보 (* 필수)</span>
 			<br>
 			<br>
 			<br>
@@ -423,35 +423,13 @@
 		</div>
 		<br>
 			<!-- Button trigger modal -->
-			<button type="button" class="btn btn-danger btn-space" style="float:right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-			   <i class="fa-solid fa-x"></i>
-			</button>
-			<button type="button" class="btn btn-danger btn-space" style="float:right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-			   <i class="fa-solid fa-trash"></i>
+			<button type="button" class="btn btn-danger btn-space" style="float:right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onClick="back()">
+			   <i class="fa-solid fa-rotate-left"></i>
 			</button>
 		
-			<!-- Modal -->
-				<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="staticBackdropLabel">Data Delete</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							</div>
-						<div class="modal-body"> 정말 삭제하시겠습니까? </div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-								<button type="button" class="btn btn-primary">Yes</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			<a class="btn btn-success btn-space " role="button" style="float:left;"><i class="fa-solid fa-file-excel"></i></a> 
-			<a class="btn btn-info btn-space" role="button" href="memberReg.html" style="float:left;"><i class="fa-solid fa-plus"></i></a>
 			<!-- Button trigger modal -->
-			<button type="button" class="btn btn-primary btn-space" data-bs-toggle="modal" data-bs-target="#exampleModal">
-			  <i class="fa-solid fa-registered"></i>
+			<button type="button" class="btn btn-success btn-space" style="float:right;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			  <i class="fa-solid fa-floppy-disk"></i>
 			</button>
 			<!-- Modal -->
 			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -536,6 +514,11 @@
 		function save()
 		{
 		     location.href = "memberView.html";
+		}
+		
+		function back()
+		{
+		     location.href = "memberList.html";
 		}
 		
 		 $(document).ready(function () {
