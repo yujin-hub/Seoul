@@ -50,12 +50,25 @@
 				</ul>
 			</div>
 		</form>
+	</div>
 
-		<!-- 카테고리  -->
-		<div id="Gnb" class="main gen1">
-			<div id="gnbWrap">
-				<a href="#" id="btnGnbOpen">카테고리</a>
-				<ul class="gnb_menu_list">
+	<div id="Gnb" class="main gen1">
+		<div id="gnbWrap">
+			<a href="#" id="btnGnbOpen">카테고리</a>
+			<!-- 전체 카테고리 레이어 -->
+			<div class="layer_all_menu" id="gnbAllMenu">
+				<ul class="all_menu_wrap">
+					<li>
+						<h2>뷰티</h2>
+						<div class="sub_menu_box">
+						</div>
+					</li>
+				</ul>
+				<button id="btnGnbClose">전체 카테고리 창 닫기</button>
+			</div>	
+			<!--// 전체 카테고리 레이어 -->
+
+			<ul class="gnb_menu_list">
 					<li>
 						<a href="https://www.oliveyoung.co.kr/store/main/getHotdealList.do"
 						   data-ref-linkUrl="main/getHotdealList.do" 
@@ -111,15 +124,20 @@
 						</a>
 					</li>
 				</ul>
-			</div>
+				<script type="text/javascript">
+					$('.gnb_menu_list').click(function() {
+						localStorage.removeItem("prdSort");
+					});
+				</script>
+			</ul>
 		</div>
 	</div>
-	
-	<br>
-	<br>
-	<br>
-	<br>
-	
+
+
+
+
+
+
 	<!-- #Footer -->
 	<div id="Footer" class="m2105">
 		<div class="twoConts">
@@ -170,4 +188,3 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/d843c66cc1.js" crossorigin="anonymous"></script>
 </body>
-</html>
