@@ -57,10 +57,8 @@
     		line-height: 35px;
 		}
     	
-    	.back-to-top-css {
-		    position: fixed;
-		    bottom: 20px;
-		    right: 20px;
+    	.btn-space {
+		    margin-right: 5px;
 		}
 		
     </style>
@@ -325,16 +323,13 @@
 			<br>
 			<br>
 			<button type="button" class="btn btn-secondary" onClick="next1()" style="float: right;">다음 <i class="fa-solid fa-angle-right"></i></button>
+			<button type="button" class="btn btn-secondary btn-space" onClick="next2()" style="float: right;"><i class="fa-solid fa-angle-left"></i> 이전</i></button>
 			<br>
 			<br>
 			<br>
 			<br>
 		</div>
 		
-		<a id="back-to-top" href="#" class="btn btn-outline-dark btn-sm back-to-top-css" role="button" title="Move Top" data-toggle="tooltip" data-placement="right">
-			<span class="glyphicon glyphicon-chevron-up"><i class="fa-solid fa-angles-up"></i><br>TOP</span>
-		</a>
-
 	<!-- #Footer -->
 	<div id="footer" style="background-color: #66865B;">
 		<li>
@@ -353,26 +348,11 @@
 		     location.href = "regDone.html";
 		}
 		
-		$(document).ready(function () {
-	        $(window).scroll(function () {
-	            if ($(this).scrollTop() > 50) {
-	                $('#back-to-top').fadeIn();
-	            } else {
-	                $('#back-to-top').fadeOut();
-	            }
-	        });
-	        // scroll body to 0px on click
-	        $('#back-to-top').click(function () {
-	            $('#back-to-top').tooltip('hide');
-	            $('body,html').animate({
-	                scrollTop: 0
-	            }, 800);
-	            return false;
-	        });
-
-	        $('#back-to-top').tooltip('show');
-
-	    });
+		function next2()
+		{
+		     location.href = "regForm.html";
+		}
+		
 	</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
