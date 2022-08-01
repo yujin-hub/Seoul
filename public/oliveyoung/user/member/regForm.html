@@ -60,7 +60,12 @@
 	    	background-color: #fcfcfc;
 	    }
 	    
-	    
+	   .back-to-top-css {
+		    position: fixed;
+		    bottom: 20px;
+		    right: 20px;
+		}
+		
     </style>
 </head>
     
@@ -175,6 +180,10 @@
 		<br>
 		<br>
 		
+		<a id="back-to-top" href="#" class="btn btn-outline-dark btn-sm back-to-top-css" role="button" title="Move Top" data-toggle="tooltip" data-placement="right">
+			<span class="glyphicon glyphicon-chevron-up"><i class="fa-solid fa-angles-up"></i><br>TOP</span>
+		</a>
+			
 	<!-- #Footer -->
 	<div id="footer" style="background-color: #66865B;">
 		<li>
@@ -193,6 +202,27 @@
 		{
 		     location.href = "regForm2.html";
 		}
+		
+		$(document).ready(function () {
+	        $(window).scroll(function () {
+	            if ($(this).scrollTop() > 50) {
+	                $('#back-to-top').fadeIn();
+	            } else {
+	                $('#back-to-top').fadeOut();
+	            }
+	        });
+	        // scroll body to 0px on click
+	        $('#back-to-top').click(function () {
+	            $('#back-to-top').tooltip('hide');
+	            $('body,html').animate({
+	                scrollTop: 0
+	            }, 800);
+	            return false;
+	        });
+
+	        $('#back-to-top').tooltip('show');
+
+	    });
 		
 	</script>
 
