@@ -18,13 +18,72 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://cdn.icon-icons.com/icons2/236/PNG/256/Fruit_Olive_Green_26369.png"> 
     
     <style type ="text/css">
-		#wid {
-			width: 1100px;
+   		@font-face {
+		    font-family: 'MICEGothic Bold';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+		    font-weight: 700;
+		    font-style: normal;
 		}
 		
-		#size {
-			width: 200px;
-			height: 200px;
+		#wid {
+			width: 1000px;
+		}
+		
+		#num {
+			font-size: 25px;
+			color: #93961F;
+		}
+		
+		#item {
+			border-style: none;
+		}
+		
+		.name {
+			font-family: 'MICEGothic Bold';
+			color: #4c4c4c;
+			font-size: 18px;
+		}
+		
+		.before {
+			font-family: 'MICEGothic Bold';
+			text-decoration-line: line-through;
+			color: #7E7474;
+			font-size: 15px;
+			margin-left: 100px;
+		}
+		
+		.before2 {
+			font-family: 'MICEGothic Bold';
+			margin-left: 118px;
+			text-decoration-line: line-through;
+			color: #7E7474;
+			font-size: 15px;
+		}
+		
+		.before3 {
+			font-family: 'MICEGothic Bold';
+			margin-left: 110px;
+			text-decoration-line: line-through;
+			color: #7E7474;
+			font-size: 15px;
+		}
+		
+		.sale {
+			font-family: 'MICEGothic Bold';
+			color: #C63B3B;
+			font-size: 18px;
+			float: right;
+		}
+		
+		hr {
+    		border: 1px solid; 
+    		display: block !important;
+    		width: 100% !important;
+    		color: #DFDADA;
+    	}
+		
+		.left {
+			 margin-left: 20px;
 		}
 		
 	</style>
@@ -194,10 +253,86 @@
 		<center><img src="../image/head.jpg"></center>
 		<br>
 		<br>
-		<img src="../image/item1.jpg" id="size">
-		<img src="../image/item1.jpg" id="size">
-		<img src="../image/item1.jpg" id="size">
-		<img src="../image/item1.jpg" id="size">
+		<h2>실시간 TOP3 <i class="fa-solid fa-crown"></i></h2>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+				<div>
+					<span id="num">1</span>
+				</div>
+				<div class="card" style="width: 17rem;" id="item">
+				  <img src="../image/item1.jpg" class="card-img-top" alt="...">
+				  <br>
+				  <span class="name">[에스파 윈터 PICK!] <br> 클리오 프로아이팔레트 MD</p>
+				  <br>
+				  <span class="before">32,000원</span>
+				  <span class="sale">22,400원</span>
+				</div>
+			</div>
+			<div class="col-md-4"> 	
+				<div>
+					<span id="num">2</span>
+				</div>
+				<div class="card" style="width: 17rem;" id="item">
+				  <img src="../image/item2.jpg" class="card-img-top" alt="...">
+				  <br>
+				  <span class="name">[NEW]<br>롬앤 쥬시 래스팅 틴트</p>
+				  <br>
+				  <span class="before2">9,900원</span>
+				  <span class="sale">8,400원</span>
+				</div>
+			</div>
+			<div class="col-md-4"> 
+				<div>
+					<span id="num">3</span>
+				</div>
+				<div class="card" style="width: 17rem;" id="item">
+				  <img src="../image/item3.jpg" class="card-img-top" alt="...">
+				   <br>
+				  <span class="name">웨이크메이크 워터 컬러링 <br> 퓨어 틴트 (6 Color)</p>
+				  <br>
+				  <span class="before3">16,000원</span>
+				  <span class="sale">9,900원</span>
+				</div>
+			</div>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<h2>Weekly Special</h2>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card" style="width: 17rem;" id="item">
+				  <img src="../image/item1.jpg" class="card-img-top" alt="...">
+				  <br>
+				  <span class="name">[에스파 윈터 PICK!] <br> 클리오 프로아이팔레트 MD</p>
+				  <br>
+				  <span class="before">32,000원</span>
+				  <span class="sale">22,400원</span>
+				</div>
+			</div>
+			<div class="col-md-4"> 	
+				<div class="card" style="width: 17rem;" id="item">
+				  <img src="../image/item2.jpg" class="card-img-top" alt="...">
+				  <br>
+				  <span class="name">[NEW]<br>롬앤 쥬시 래스팅 틴트</p>
+				  <br>
+				  <span class="before2">9,900원</span>
+				  <span class="sale">8,400원</span>
+				</div>
+			</div>
+			<div class="col-md-4"> 
+				<div class="card" style="width: 17rem;" id="item">
+				  <img src="../image/item3.jpg" class="card-img-top" alt="...">
+				   <br>
+				  <span class="name">웨이크메이크 워터 컬러링 <br> 퓨어 틴트 (6 Color)</p>
+				  <br>
+				  <span class="before3">16,000원</span>
+				  <span class="sale">9,900원</span>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- #Footer -->
