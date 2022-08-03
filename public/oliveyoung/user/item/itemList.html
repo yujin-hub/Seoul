@@ -48,45 +48,97 @@
 			font-family: 'MICEGothic Bold';
 			text-decoration-line: line-through;
 			color: #7E7474;
-			font-size: 15px;
-			margin-left: 90px;
+			font-size: 17px;
+			margin-left: 75px;
 		}
 		
 		.before2 {
 			font-family: 'MICEGothic Bold';
-			margin-left: 108px;
+			margin-left: 95px;
 			text-decoration-line: line-through;
 			color: #7E7474;
-			font-size: 15px;
+			font-size: 17px;
 		}
 		
 		.before3 {
 			font-family: 'MICEGothic Bold';
-			margin-left: 100px;
+			margin-left: 85px;
 			text-decoration-line: line-through;
 			color: #7E7474;
-			font-size: 15px;
+			font-size: 17px;
 		}
 		
 		.sale {
 			font-family: 'MICEGothic Bold';
 			color: #C63B3B;
-			font-size: 18px;
+			font-size: 20px;
 			float: right;
 		}
 		
 		hr {
     		border: 1px solid; 
     		display: block !important;
-    		width: 1000px !important;
+    		width: 1020px !important;
     		color: #DFDADA;
     	}
 		
 		#left {
-			 margin-left: 72px;
+			 margin-left: 75px;
 		}
 		
+		.badge {
+			float: right;
+		}
 		
+		.back-to-top-css {
+		    position: fixed;
+		    bottom: 20px;
+		    right: 20px;
+		}
+
+		section {
+		  display: none;
+		  padding: 20px 0 0;
+		  border-top: 1px solid #ddd;
+		}
+		
+		input {
+		  display: none;
+		} 
+		
+		label {
+		  display: inline-block;
+		  margin: 0 0 -1px;
+		  padding: 15px 25px;
+		  font-weight: 600;
+		  text-align: center;
+		  color: #bbb;
+		  border: 1px solid transparent;
+		  
+		 }
+		
+		label:hover {
+		  color: #2e9cdf;
+		  cursor: pointer;
+		}
+		
+		input:checked + label {
+		  color: #555;
+		  border: 1px solid #2e9cdf;
+		  border-top: 2px solid #2e9cdf;
+		  border-bottom: 1px solid #ffffff;
+		}
+					
+		
+		#tab1:checked ~ #content1,
+		#tab2:checked ~ #content2, 
+		#tab3:checked ~ #content3, 
+		#tab4:checked ~ #content4,
+		#tab5:checked ~ #content5,
+		#tab6:checked ~ #content6 {
+  				display: block;
+  		}
+  
 	</style>
 </head>
     
@@ -268,6 +320,8 @@
 				  <br>
 				  <span class="before">32,000원</span>
 				  <span class="sale">22,400원</span>
+				  <span class="badge rounded-pill" style="background-color: #E85858;">세일</span>
+				  <span class="badge rounded-pill" style="background-color: #6C9FC3;">오늘드림</span>
 				</div>
 			</div>
 			<div class="col-md-3" id="left"> 	
@@ -281,6 +335,8 @@
 				  <br>
 				  <span class="before2">9,900원</span>
 				  <span class="sale">8,400원</span>
+				  <span class="badge rounded-pill" style="background-color: #E85858;">세일</span>
+				  <span class="badge rounded-pill" style="background-color: #6C9FC3;">오늘드림</span>
 				</div>
 			</div>
 			<div class="col-md-3"  id="left"> 
@@ -294,6 +350,9 @@
 				  <br>
 				  <span class="before3">16,000원</span>
 				  <span class="sale">9,900원</span>
+				  <span class="badge rounded-pill" style="background-color: #E85858;">세일</span>
+				  <span class="badge rounded-pill" style="background-color: #4aa828;">쿠폰</span>
+				  <span class="badge rounded-pill" style="background-color: #6C9FC3;">오늘드림</span>
 				</div>
 			</div>
 		</div>
@@ -311,6 +370,8 @@
 				  <br>
 				  <span class="before2">3,000원</span>
 				  <span class="sale">1,200원</span>
+				  <span class="badge rounded-pill" style="background-color: #E85858;">세일</span>
+				  <span class="badge rounded-pill" style="background-color: #f2c202;">1+1</span>
 				</div>
 			</div>
 			<div class="col-md-3" id="left"> 	
@@ -321,6 +382,7 @@
 				  <br>
 				  <span class="before3">10,800원</span>
 				  <span class="sale">9,700원</span>
+				  <span class="badge rounded-pill" style="background-color: #E85858;">세일</span>
 				</div>
 			</div>
 			<div class="col-md-3"  id="left"> 
@@ -332,6 +394,8 @@
 				  <br>
 				  <span class="before">19,000원</span>
 				  <span class="sale">15,200원</span>
+				  <span class="badge rounded-pill" style="background-color: #E85858;">세일</span>
+				  <span class="badge rounded-pill" style="background-color: #4aa828;">쿠폰</span>
 				</div>
 			</div>
 		</div>
@@ -342,17 +406,67 @@
 		<br>
 		<div class="row">
 			<div class="col-6">
-			<img src="../image/sale.jpg">
+			<a href="https://www.oliveyoung.co.kr/store/planshop/getPlanShopDetail.do?dispCatNo=500000101780212&trackingCd=Home_Planshop3_PROD"><img src="../image/sale.jpg"></a>
 			</div>
 			<div class="col-6">
-			<img src="../image/sale2.jpg">
+			<a href="https://www.oliveyoung.co.kr/store/planshop/getPlanShopDetail.do?dispCatNo=500000102390043&trackingCd=Home_Planshop3_PROD"><img src="../image/sale2.jpg"></a>
 			</div>
 		</div>
 		<br>
 		<hr>
 		<br>
 		<h2>주목해야 할 브랜드</h2>
+		<br>
+		
+		<div class="main">
+		 <input id="tab1" type="radio" name="tabs" checked> 
+		 <label for="tab1">tab menu1</label>
+		
+		 <input id="tab2" type="radio" name="tabs">
+		 <label for="tab2">tab menu2</label>
+		
+		 <input id="tab3" type="radio" name="tabs">
+		 <label for="tab3">tab menu3</label>
+		
+		 <input id="tab4" type="radio" name="tabs">
+		 <label for="tab4">tab menu4</label>
+		 
+		 <input id="tab5" type="radio" name="tabs">
+		 <label for="tab5">tab menu5</label>
+		
+		 <input id="tab6" type="radio" name="tabs">
+		 <label for="tab6">tab menu6</label>
+		 
+		 <section id="content1">
+		  <p>tab menu1의 내용</p>
+		 </section>
+		
+		 <section id="content2">
+		  <p>tab menu2의 내용</p>
+		 </section>
+		
+		 <section id="content3">
+		  <p>tab menu3의 내용</p>
+		 </section>
+		
+		 <section id="content4">
+		  <p>tab menu4의 내용</p>
+		 </section>
+		 
+		 <section id="content5">
+		  <p>tab menu5의 내용</p>
+		 </section>
+		 
+		 <section id="content6">
+		  <p>tab menu6의 내용</p>
+		 </section>
+		
+		</div>
+		
+		
+
 	</div>
+
 
 	<!-- #Footer -->
 	<div id="Footer" class="m2105">
@@ -401,6 +515,35 @@
 		</div>
 	</div>
 
+	<a id="back-to-top" href="#" class="btn btn-outline-dark back-to-top-css" role="button" title="Move Top" data-toggle="tooltip" data-placement="left">
+	<span class="glyphicon glyphicon-chevron-up"><i class="fa-solid fa-angles-up"></i><br>TOP</span>
+	</a>
+
+<script type="text/javascript">
+	 $(document).ready(function () {
+	        $(window).scroll(function () {
+	            if ($(this).scrollTop() > 50) {
+	                $('#back-to-top').fadeIn();
+	            } else {
+	                $('#back-to-top').fadeOut();
+	            }
+	        });
+	        // scroll body to 0px on click
+	        $('#back-to-top').click(function () {
+	            $('#back-to-top').tooltip('hide');
+	            $('body,html').animate({
+	                scrollTop: 0
+	            }, 800);
+	            return false;
+	        });
+
+	        $('#back-to-top').tooltip('show');
+
+	    });
+	 
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/d843c66cc1.js" crossorigin="anonymous"></script>
 </body>
