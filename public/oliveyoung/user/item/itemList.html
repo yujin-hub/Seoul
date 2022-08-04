@@ -68,6 +68,22 @@
 			font-size: 17px;
 		}
 		
+		.before3 {
+			font-family: 'MICEGothic Bold';
+			margin-left: 60px;
+			text-decoration-line: line-through;
+			color: #7E7474;
+			font-size: 17px;
+		}
+		
+		.before4 {
+			font-family: 'MICEGothic Bold';
+			margin-left: 50px;
+			text-decoration-line: line-through;
+			color: #7E7474;
+			font-size: 17px;
+		}
+		
 		.sale {
 			font-family: 'MICEGothic Bold';
 			color: #C63B3B;
@@ -78,16 +94,28 @@
 		hr {
     		border: 1px solid; 
     		display: block !important;
-    		width: 1020px !important;
+    		width: 1000px !important;
     		color: #DFDADA;
     	}
 		
 		#left {
-			 margin-left: 75px;
+			 margin-left: 70px;
 		}
 		
-		.left2 {
-			 margin-left: 45px;
+		.card {
+			width: 16rem;
+		}
+				
+		.card2 {
+			width: 15rem;
+		}
+		
+		.brand {
+			color: #8e8e8e;
+		}
+		
+		.mid {
+			text-align: center;
 		}
 		
 		.badge {
@@ -99,27 +127,26 @@
 		    bottom: 20px;
 		    right: 20px;
 		}
-
+		
 		section {
-		  display: none;
-		  padding: 20px 0 0;
-		  border-top: 1px solid #ddd;
+			display: none;
+			padding: 20px 0 0;
+			border-top: 1px solid #ddd;
+			width: 1000px;
 		}
 		
 		input {
-		  display: none;
+			display: none;
 		} 
 		
 		label {
-		  display: inline-block;
-		  margin: 0 0 -1px;
-		  padding: 20px 44px;
-		  font-weight: 600;
-		  text-align: center;
-		  color: #bbb;
-		  border: 1px solid transparent;
-		  
-		 }
+			display: inline-block;
+			padding: 20px 44px;
+			font-size: 20px;
+			text-align: center;
+			color: #bbb;
+			border: 3px solid transparent;
+		}
 		
 		label:hover {
 		  color: #93961F;
@@ -127,10 +154,9 @@
 		}
 		
 		input:checked + label {
-		  color: #555;
-		  border: 1px solid #93961F;
-		  border-top: 2px solid #93961F;
-		  border-bottom: 1px solid #ffffff;
+		  border: 3px solid #93961F;
+		  border-top: 3px solid #93961F;
+		  border-bottom: 3px solid #93961F;
 		}
 					
 		#tab1:checked ~ #content1,
@@ -366,7 +392,7 @@
 		<br>
 		<div class="row">
 			<div class="col-md-3" id="left">
-				<div class="card" style="width: 16rem;" id="item">
+				<div class="card" id="item">
 				  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0015/A00000015015308ko.jpg?l=ko" class="card-img-top" alt="...">
 				  <br>
 				  <span class="name">리얼베리어 아쿠아 수딩 크림 마스크</p>
@@ -378,7 +404,7 @@
 				</div>
 			</div>
 			<div class="col-md-3" id="left"> 	
-				<div class="card" style="width: 16rem;" id="item">
+				<div class="card" id="item">
 				  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A000000167080148ko.jpg?l=ko" class="card-img-top" alt="...">
 				  <br>
 				  <span class="name">데싱디바 매직프레스 페디 사일런트 오션 2205</p>
@@ -388,8 +414,8 @@
 				  <span class="badge rounded-pill" style="background-color: #E85858;">세일</span>
 				</div>
 			</div>
-			<div class="col-md-3"  id="left"> 
-				<div class="card" style="width: 16rem;" id="item">
+			<div class="col-md-3" id="left"> 
+				<div class="card" id="item">
 				  <img src= "https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013629656ko.jpg?l=ko" class="card-img-top" alt="...">
 				   <br>
 				  <span class="name">페리페라 올테이크 무드 팔레트</p>
@@ -420,52 +446,1153 @@
 		<br>
 		<h2>주목해야 할 브랜드</h2>
 		<br>
-		
-		<div class="main">
+		<div class="main left2">
 			<input id="tab1" type="radio" name="tabs" checked> 
-			<label for="tab1">tab menu1</label>
+			<label for="tab1">캘빈클라인</label>
 			
 			<input id="tab2" type="radio" name="tabs">
-			<label for="tab2">tab menu2</label>
+			<label for="tab2">AHC</label>
 			
 			<input id="tab3" type="radio" name="tabs">
-			<label for="tab3">tab menu3</label>
+			<label for="tab3">아비브</label>
 			
 			<input id="tab4" type="radio" name="tabs">
-			<label for="tab4">tab menu4</label>
+			<label for="tab4">비욘드</label>
 			
 			<input id="tab5" type="radio" name="tabs">
-			<label for="tab5">tab menu5</label>
+			<label for="tab5">데싱디바</label>
 			
 			<input id="tab6" type="radio" name="tabs">
-			<label for="tab6">tab menu6</label>
+			<label for="tab6">바이오더마</label>
 			
 			<section id="content1">
-			 	<p>tab menu1의 내용</p>
+				<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016911302ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">캘빈클라인</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 One EDT 50ml + 미니어처 15ml 기획</p>
+						  <br>
+						  <span class="sale">60,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016163406ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">캘빈클라인</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 디파이 EDT 30ml</p>
+						  <br>
+						  <span class="sale">71,000원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0017/A00000017113301ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">캘빈클라인</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 원 모이스처라이저 250ml</p>
+						  <br>
+						  <span class="before3">53,000원</span>
+						  <span class="sale">42,200원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013722104ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">캘빈클라인</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 에브리원 EDT 100ml</p>
+						  <br>
+						  <span class="sale">90,000원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016768305ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">캘빈클라인</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 One 22 Summer EDT 100ml 기획세트 (15ml 추가증정)</p>
+						  <br>
+						  <span class="before3">85,000원</span>
+						  <span class="sale">59,500원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0017/A00000017086501ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">캘빈클라인</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 One EDT 200ml</p>
+						  <br>
+						  <br>
+						  <span class="before4">11,6000원</span>
+						  <span class="sale">92,800원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0012/A00000012083102ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">캘빈클라인</span>
+						  </div>
+						  <span class="name">캘빈클라인 이터니티 에어 맨 EDT 30ml</p>
+						  <br>
+						  <br>
+						  <span class="sale">58,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013530105ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">캘빈클라인</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 비 EDT 50ml</p>
+						  <br>
+						  <br>
+						  <br>
+						  <span class="before3">68,000원</span>
+						  <span class="sale">48,800원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0015/A00000015763501ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">캘빈클라인</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 디파이 EDT 50ml</p>
+						  <br>
+						  <br>
+						  <span class="sale">96,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0012/A00000012839703ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">캘빈클라인</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 이터니티 맨 EDT 30ml</p>
+						  <br>
+						  <br>
+						  <span class="before3">68,000원</span>
+						  <span class="sale">54,400원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016163407ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">캘빈클라인</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 디파이 EDT 50ml +1.2ml*2 + 에브리원 1.2ml *2</p>
+						  <br>
+						  <span class="sale">96,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013722701ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">캘빈클라인</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 에브리원 EDT 50ml</p>
+						  <br>
+						  <br>
+						  <span class="before3">64,000원</span>
+						  <span class="sale">57,600원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<ul class="pagination justify-content-center">
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+				<br>
 			</section>
 			
 			<section id="content2">
-				<p>tab menu2의 내용</p>
+				<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0015/A00000015562505ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">AHC</span>
+						  </div>
+						  <span class="name">AHC 아우라 시크릿 톤업 벨벳 (본품55g+10g 증정)</p>
+						  <br>
+						  <span class="before3">29,000원</span>
+						  <span class="sale">20,300원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016519202ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">AHC</span>
+						  </div>
+						  <span class="name">AHC 텐션 아이크림 스틱 포 페이스 기획</p>
+						  <br>
+						  <span class="sale">19,900원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016484501ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">AHC</span>
+						  </div>
+						  <span class="name">AHC 세이프온 마일드 선 쿠션 25g</p>
+						  <br>
+						  <span class="before3">29,000원</span>
+						  <span class="sale">16,900원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016536401ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">AHC</span>
+						  </div>
+						  <span class="name">AHC 허브솔루션 로즈 토너 500ml (온)</p>
+						  <br>
+						  <span class="before3">15,000원</span>
+						  <span class="sale">11,900원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0015/A00000015711504ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">AHC</span>
+						  </div>
+						  <span class="name">[단독기획] AHC 하이드라 B5 바이옴 앰플</p>
+						  <br>
+						  <span class="before3">34,000원</span>
+						  <span class="sale">27,900원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013718101ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">AHC</span>
+						  </div>
+						  <span class="name">AHC 내추럴퍼펙션 프레쉬 선스틱</p>
+						  <br>
+						  <span class="before4">19,000원</span>
+						  <span class="sale">13,900원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0015/A00000015101705ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">AHC</span>
+						  </div>
+						  <span class="name">AHC 유스 래스팅 리얼 아이크림 포 페이스 (30ml+30ml+36ml)</p>
+						  <br>
+						  <span class="before4">30,000원</span>
+						  <span class="sale">24,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0015/A00000015351003ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">AHC</span>
+						  </div>
+						  <span class="name">AHC 마스터즈 아쿠아 리치 선크림 더블 기획 (30ml+30ml)</p>
+						  <br>
+						  <br>
+						  <span class="sale">24,000원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0014/A00000014564103ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">AHC</span>
+						  </div>
+						  <span class="name">AHC 마이크로 비타민 착붙 마스크 시트 33ml 10매</p>
+						  <br>
+						  <span class="sale">30,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0014/A00000014564303ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">AHC</span>
+						  </div>
+						  <span class="name">AHC 마이크로 퓨어 워터 착붙 마스크 시트 33ml 10매</p>
+						  <br>
+						  <span class="sale">30,000원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0014/A00000014983402ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">AHC</span>
+						  </div>
+						  <span class="name">[단독기획] AHC 365 레드 퍼퓸드 핸드 기획</p>
+						  <br>
+						  <span class="before3">24,000원</span>
+						  <span class="sale">19,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013780502ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">AHC</span>
+						  </div>
+						  <span class="name">AHC 에센스케어 파우더워시 에메랄드 40g</p>
+						  <br>
+						  <span class="sale">22,000원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<ul class="pagination justify-content-center">
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+				<br>
 			</section>
 			
 			<section id="content3">
-			 	<p>tab menu3의 내용</p>
+			 	<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016911302ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">아비브</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 One EDT 50ml + 미니어처 15ml 기획</p>
+						  <br>
+						  <span class="sale">60,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016163406ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">아비브</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 디파이 EDT 30ml</p>
+						  <br>
+						  <span class="sale">71,000원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0017/A00000017113301ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">아비브</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 원 모이스처라이저 250ml</p>
+						  <br>
+						  <span class="before3">53,000원</span>
+						  <span class="sale">42,200원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013722104ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">아비브</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 에브리원 EDT 100ml</p>
+						  <br>
+						  <span class="sale">90,000원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016768305ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">아비브</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 One 22 Summer EDT 100ml 기획세트 (15ml 추가증정)</p>
+						  <br>
+						  <span class="before3">85,000원</span>
+						  <span class="sale">59,500원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0017/A00000017086501ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">아비브</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 One EDT 200ml</p>
+						  <br>
+						  <br>
+						  <span class="before4">11,6000원</span>
+						  <span class="sale">92,800원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0012/A00000012083102ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">아비브</span>
+						  </div>
+						  <span class="name">캘빈클라인 이터니티 에어 맨 EDT 30ml</p>
+						  <br>
+						  <br>
+						  <span class="sale">58,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013530105ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">아비브</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 비 EDT 50ml</p>
+						  <br>
+						  <br>
+						  <br>
+						  <span class="before3">68,000원</span>
+						  <span class="sale">48,800원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0015/A00000015763501ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">아비브</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 디파이 EDT 50ml</p>
+						  <br>
+						  <br>
+						  <span class="sale">96,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0012/A00000012839703ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">아비브</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 이터니티 맨 EDT 30ml</p>
+						  <br>
+						  <br>
+						  <span class="before3">68,000원</span>
+						  <span class="sale">54,400원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016163407ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">아비브</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 디파이 EDT 50ml +1.2ml*2 + 에브리원 1.2ml *2</p>
+						  <br>
+						  <span class="sale">96,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013722701ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">아비브</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 에브리원 EDT 50ml</p>
+						  <br>
+						  <br>
+						  <span class="before3">64,000원</span>
+						  <span class="sale">57,600원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<ul class="pagination justify-content-center">
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+				<br>
 			</section>
 			
 			<section id="content4">
-			 	<p>tab menu4의 내용</p>
+			 	<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016911302ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">비욘드</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 One EDT 50ml + 미니어처 15ml 기획</p>
+						  <br>
+						  <span class="sale">60,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016163406ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">비욘드</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 디파이 EDT 30ml</p>
+						  <br>
+						  <span class="sale">71,000원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0017/A00000017113301ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">비욘드</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 원 모이스처라이저 250ml</p>
+						  <br>
+						  <span class="before3">53,000원</span>
+						  <span class="sale">42,200원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013722104ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">비욘드</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 에브리원 EDT 100ml</p>
+						  <br>
+						  <span class="sale">90,000원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016768305ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">비욘드</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 One 22 Summer EDT 100ml 기획세트 (15ml 추가증정)</p>
+						  <br>
+						  <span class="before3">85,000원</span>
+						  <span class="sale">59,500원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0017/A00000017086501ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">비욘드</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 One EDT 200ml</p>
+						  <br>
+						  <br>
+						  <span class="before4">11,6000원</span>
+						  <span class="sale">92,800원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0012/A00000012083102ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">비욘드</span>
+						  </div>
+						  <span class="name">캘빈클라인 이터니티 에어 맨 EDT 30ml</p>
+						  <br>
+						  <br>
+						  <span class="sale">58,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013530105ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">비욘드</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 비 EDT 50ml</p>
+						  <br>
+						  <br>
+						  <br>
+						  <span class="before3">68,000원</span>
+						  <span class="sale">48,800원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0015/A00000015763501ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">비욘드</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 디파이 EDT 50ml</p>
+						  <br>
+						  <br>
+						  <span class="sale">96,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0012/A00000012839703ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">비욘드</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 이터니티 맨 EDT 30ml</p>
+						  <br>
+						  <br>
+						  <span class="before3">68,000원</span>
+						  <span class="sale">54,400원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016163407ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">비욘드</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 디파이 EDT 50ml +1.2ml*2 + 에브리원 1.2ml *2</p>
+						  <br>
+						  <span class="sale">96,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013722701ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">비욘드</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 에브리원 EDT 50ml</p>
+						  <br>
+						  <br>
+						  <span class="before3">64,000원</span>
+						  <span class="sale">57,600원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<ul class="pagination justify-content-center">
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+				<br>
 			</section>
 			
 			<section id="content5">
-			 	<p>tab menu5의 내용</p>
+				<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016911302ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">데싱디바</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 One EDT 50ml + 미니어처 15ml 기획</p>
+						  <br>
+						  <span class="sale">60,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016163406ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">데싱디바</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 디파이 EDT 30ml</p>
+						  <br>
+						  <span class="sale">71,000원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0017/A00000017113301ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">데싱디바</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 원 모이스처라이저 250ml</p>
+						  <br>
+						  <span class="before3">53,000원</span>
+						  <span class="sale">42,200원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013722104ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">데싱디바</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 에브리원 EDT 100ml</p>
+						  <br>
+						  <span class="sale">90,000원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016768305ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">데싱디바</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 One 22 Summer EDT 100ml 기획세트 (15ml 추가증정)</p>
+						  <br>
+						  <span class="before3">85,000원</span>
+						  <span class="sale">59,500원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0017/A00000017086501ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">데싱디바</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 One EDT 200ml</p>
+						  <br>
+						  <br>
+						  <span class="before4">11,6000원</span>
+						  <span class="sale">92,800원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0012/A00000012083102ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">데싱디바</span>
+						  </div>
+						  <span class="name">캘빈클라인 이터니티 에어 맨 EDT 30ml</p>
+						  <br>
+						  <br>
+						  <span class="sale">58,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013530105ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">데싱디바</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 비 EDT 50ml</p>
+						  <br>
+						  <br>
+						  <br>
+						  <span class="before3">68,000원</span>
+						  <span class="sale">48,800원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0015/A00000015763501ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">데싱디바</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 디파이 EDT 50ml</p>
+						  <br>
+						  <br>
+						  <span class="sale">96,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0012/A00000012839703ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">데싱디바</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 이터니티 맨 EDT 30ml</p>
+						  <br>
+						  <br>
+						  <span class="before3">68,000원</span>
+						  <span class="sale">54,400원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016163407ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">데싱디바</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 디파이 EDT 50ml +1.2ml*2 + 에브리원 1.2ml *2</p>
+						  <br>
+						  <span class="sale">96,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013722701ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">데싱디바</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 에브리원 EDT 50ml</p>
+						  <br>
+						  <br>
+						  <span class="before3">64,000원</span>
+						  <span class="sale">57,600원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<ul class="pagination justify-content-center">
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+				<br>
 			</section>
 			
 			<section id="content6">
-			 	<p>tab menu6의 내용</p>
+			 	<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016911302ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">바이오더마</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 One EDT 50ml + 미니어처 15ml 기획</p>
+						  <br>
+						  <span class="sale">60,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016163406ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">바이오더마</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 디파이 EDT 30ml</p>
+						  <br>
+						  <span class="sale">71,000원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0017/A00000017113301ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">바이오더마</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 원 모이스처라이저 250ml</p>
+						  <br>
+						  <span class="before3">53,000원</span>
+						  <span class="sale">42,200원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013722104ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">바이오더마</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 에브리원 EDT 100ml</p>
+						  <br>
+						  <span class="sale">90,000원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016768305ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">바이오더마</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 One 22 Summer EDT 100ml 기획세트 (15ml 추가증정)</p>
+						  <br>
+						  <span class="before3">85,000원</span>
+						  <span class="sale">59,500원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0017/A00000017086501ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">바이오더마</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 One EDT 200ml</p>
+						  <br>
+						  <br>
+						  <span class="before4">11,6000원</span>
+						  <span class="sale">92,800원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0012/A00000012083102ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">바이오더마</span>
+						  </div>
+						  <span class="name">캘빈클라인 이터니티 에어 맨 EDT 30ml</p>
+						  <br>
+						  <br>
+						  <span class="sale">58,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013530105ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">바이오더마</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 비 EDT 50ml</p>
+						  <br>
+						  <br>
+						  <br>
+						  <span class="before3">68,000원</span>
+						  <span class="sale">48,800원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0015/A00000015763501ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">바이오더마</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 디파이 EDT 50ml</p>
+						  <br>
+						  <br>
+						  <span class="sale">96,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0012/A00000012839703ko.jpg?l=ko" class="card-img-top" >
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">바이오더마</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 이터니티 맨 EDT 30ml</p>
+						  <br>
+						  <br>
+						  <span class="before3">68,000원</span>
+						  <span class="sale">54,400원</span>
+						</div>
+					</div>
+					<div class="col-3">	
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016163407ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">바이오더마</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 디파이 EDT 50ml +1.2ml*2 + 에브리원 1.2ml *2</p>
+						  <br>
+						  <span class="sale">96,000원</span>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card2" id="item">
+						  <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0013/A00000013722701ko.jpg?l=ko" class="card-img-top">
+						  <br>
+						  <div class="mid">
+						  	<span class="brand">바이오더마</span>
+						  </div>
+						  <span class="name">CK 캘빈클라인 에브리원 EDT 50ml</p>
+						  <br>
+						  <br>
+						  <span class="before3">64,000원</span>
+						  <span class="sale">57,600원</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<ul class="pagination justify-content-center">
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+				<br>
 			</section>
 		</div>
 	</div>
-
+	<br>
+	<br>
 
 	<!-- #Footer -->
 	<div id="Footer" class="m2105">
