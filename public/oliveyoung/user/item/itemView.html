@@ -458,7 +458,7 @@
 				<hr>
 				<br>
 				<div id="btn">
-					<button type="button" class="btn btn1 btn-lg">바로구매</button>
+					<button type="button" class="btn btn1 btn-lg" onClick="buy()">바로구매</button>
 					<button type="button" class="btn btn2 btn-lg">장바구니</button>
 				</div>
 			</div>
@@ -1241,6 +1241,11 @@
 	        $('#back-to-top').tooltip('show');
 
 	    });
+	 
+	 function buy()
+		{
+		     location.href = "../payment/payForm.html";
+		}
 	 
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

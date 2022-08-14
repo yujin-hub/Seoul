@@ -26,10 +26,82 @@
 
 		.mydiv{
 			background-image: url('../image/order.jpg');
-			background-repeat : no-repeat; 
 		}
 		
+		.mydiv2{
+			width: 1100px;
+		}
 		
+		#font{
+			font-size: 28px;
+			font-weight: bold;
+		}
+		
+		#wid{
+			width: 1070px;
+		}
+		
+		hr{
+			border: 1px solid; 
+    		display: block !important;
+    		width: 1000px !important;
+    		color: #848484;
+		}
+
+		#font1{
+			font-size: 20px;
+			font-weight: bold;
+		}
+		
+		#font2{
+			font-size: 18px;
+			color: #595959;
+			font-weight: bold;
+		}
+		
+		#font3{
+			font-size: 15px;
+			color: #595959;
+			text-decoration-line: line-through;
+		}
+		
+		#cdiv {
+	   		background-color: #f7f7f7;
+	   		margin-left: 10px; 
+	   		line-height: 35px;
+	   		color: #3a3a3a;
+	   		font-size: 17px;
+		}
+		
+		#bdiv {
+	   		background-color: #f7f7f7;
+	   		margin-left: 2px; 
+	   		line-height: 35px;
+	   		color: #3a3a3a;
+	   		font-size: 17px;
+	   		width: 1000px;
+		}
+		
+		#text{
+			text-align: center;
+		}
+			
+		.text{
+			text-align: center;
+		}
+		
+		.text1{
+			margin-left: 15px;
+		}
+		
+		#top{
+			margin-top: 80px;
+		}
+		
+		#top2{
+			margin-top: 95px;
+		}
+			
 	</style>
 </head>
     
@@ -47,7 +119,7 @@
 		
 		<form autocomplete="off">
 			<div class="header_inner" >
-	            <h1><a href="itemList.html"><img src="https://image.oliveyoung.co.kr/pc-static-root/image/comm/h1_logo.png" alt="올리브영"></a></h1>
+	            <h1><a href="../item/itemList.html"><img src="https://image.oliveyoung.co.kr/pc-static-root/image/comm/h1_logo.png" alt="올리브영"></a></h1>
 				<div class="search_box" id="w_search_box">
 					<input type="hidden" name="chkButton" id="chkButton">		
 					<input type="text" id="query" class="inp_placeholder">
@@ -149,9 +221,170 @@
 		</div>
 	</div>
 
-	<div class="mydiv">
-		<span>주문/결제</span>
+	<div class="container-fluid mydiv">
+		<div class="container mydiv2">
+			<br>
+			<br>
+			<span id="font">주문 / 결제</span>
+			<br>
+			<br>
+			<br>
+		</div>
 	</div> 
+	<div class="container" id="wid">
+		<br>
+		<br>
+		<span id="font1">배송지 정보</span>
+		<hr>
+		<div class="row">
+			<div class="col-3" id="cdiv">
+				<span>배송지 선택</span>
+			</div>
+			<div class="col-7" style="margin-top: 6px;">
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="option1" checked>
+				  <label class="form-check-label" for="flexRadioDefault2">기존 배송지</label>
+				</div>
+				<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+					  <label class="form-check-label" for="inlineRadio2">신규 배송지</label>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-3" id="cdiv">
+				<span>배송지 명</span>
+			</div>
+			<div class="col-5">
+				<input type="text" class="form-control" id="validationCustom01" aria-label="name">
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-3" id="cdiv">
+				<span>받는분</span>
+			</div>
+			<div class="col-5">
+				<input type="text" class="form-control" id="validationCustom01" aria-label="recipient">
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-3" id="cdiv">
+				<span>연락처</span>
+			</div>
+			<div class="col-2">
+				<select class="form-select" aria-label="validationCustom03">
+					<option selected>SKT</option>
+					<option value="2">KT</option>
+					<option value="3">LG</option>
+					<option value="4">알뜰폰</option>
+				</select> 
+			</div>
+			<div class="col-1">
+				<select class="form-select" aria-label="validationCustom04">
+					<option selected>010</option>
+					<option value="2">070</option>
+					<option value="3">02</option>
+					<option value="4">기타</option>
+				</select> 
+			</div>
+			<div class="col-2">
+				<input type="text" class="form-control" id="validationCustom01" aria-label="mobile2">
+			</div>
+			<div class="col-2">
+				<input type="text" class="form-control" id="validationCustom01" aria-label="mobile2"> 
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-3" id="cdiv">
+				<span>주소</span>
+			</div>
+			<div class="col-8" style="margin-top: 8px;">
+				<div class="row gy-2">
+					<div class="col-4">
+						<input type="text" name="zip" class="form-control" id="validationCustom01" aria-label="post">
+					</div>
+					<div class="col-3">
+						<button type="button" class="btn btn-secondary" onclick="openZipSearch()"> 우편번호 검색 </button>
+					</div>
+					<br>
+					<div><input type="text" name="addr1" class="form-control" id="validationCustom01" aria-label="addr"></div>
+					<div><input type="text" name="addr2" class="form-control" id="validationCustom01" aria-label="addr2"></div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<br>
+		<span id="font1">배송 요청사항</span>
+		<hr>
+		<div class="row">
+			<div class="col-3" id="cdiv">
+				<span>배송 메시지</span>
+			</div>
+			<div class="col-5">
+				<select class="form-select" aria-label=".form-select example" required>
+					<option selected>배송메시지를 선택해주세요.</option>
+					<option value="1">문 앞에 놔주세요.</option>
+					<option value="2">경비실에 맡겨주세요.</option>
+					<option value="3">배송 전에 전화주세요.</option>
+					<option value="4">부재시 연락주세요.</option>
+					<option value="5">직접 입력</option>
+				</select> 
+			</div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<br>
+		<span id="font1">상품정보</span>
+		<hr>
+		<div class="row" id="bdiv">
+			<div class="col-6" id="text">
+				<span>상품정보</span>
+			</div>
+			<div class="col-2" id="text">
+				<span>판매가</span>
+			</div>
+			<div class="col-2" id="text">
+				<span>수량</span>
+			</div>
+			<div class="col-1" id="text">
+				<span>구매가</span>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-2">
+				<img src="../image/winter.jpg">
+			</div>
+			<div class="col-4 text" id="top">
+				<span>클리오</span>
+				<br>
+				<span id="font2">클리오 프로아이팔레트 AD</span>
+			</div>
+			<div class="col-2 text1" id="top2">
+				<span id="font2">32,000원</span>
+			</div>
+			<div class="col-1 text1" id="top2">
+				<span id="font2">1개</span>
+			</div>
+			<div class="col-2 text1" id="top">
+				<span id="font3">32,000원</span>
+				<br>
+				<span id="font2">22,400원</span>
+			</div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<br>
+		<span id="font1">보유 쿠폰</span>
+	</div>
 
 	<!-- #Footer -->
 	<div id="Footer" class="m2105">
