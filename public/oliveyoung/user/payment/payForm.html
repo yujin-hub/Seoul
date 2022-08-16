@@ -33,18 +33,32 @@
 		}
 		
 		#font{
-			font-size: 28px;
+			font-size: 25px;
 			font-weight: bold;
 		}
 		
 		#wid{
-			width: 1070px;
+			width: 1100px;
 		}
 		
 		hr{
 			border: 1px solid; 
     		display: block !important;
-    		width: 1000px !important;
+    		width: 1100px !important;
+    		color: #848484;
+		}
+		
+		.hr1{
+			border: 1px solid; 
+    		display: block !important;
+    		width: 640px !important;
+    		color: #848484;
+		}
+		
+		.hr2{
+			border: 1px solid; 
+    		display: block !important;
+    		width: 1040px !important;
     		color: #848484;
 		}
 
@@ -54,54 +68,115 @@
 		}
 		
 		#font2{
-			font-size: 18px;
+			font-size: 15px;
 			color: #595959;
 			font-weight: bold;
 		}
 		
 		#font3{
-			font-size: 15px;
+			font-size: 12px;
 			color: #595959;
 			text-decoration-line: line-through;
 		}
 		
-		#cdiv {
+		#font4{
+			font-size: 15px;
+			font-weight: bold;
+		}
+
+		#cdiv{
 	   		background-color: #f7f7f7;
 	   		margin-left: 10px; 
 	   		line-height: 35px;
 	   		color: #3a3a3a;
-	   		font-size: 17px;
+	   		font-size: 15px;
 		}
 		
-		#bdiv {
+		#bdiv{
 	   		background-color: #f7f7f7;
 	   		margin-left: 2px; 
 	   		line-height: 35px;
 	   		color: #3a3a3a;
 	   		font-size: 17px;
-	   		width: 1000px;
+	   		width: 1100px;
+		}
+		
+		#bdiv1{
+	   		background-color: #f7f7f7;
+	   		margin-left: 2px; 
+	   		line-height: 35px;
+	   		color: #3a3a3a;
+	   		font-size: 17px;
+	   		width: 640px;
+	   		text-align: center;
 		}
 		
 		#text{
 			text-align: center;
 		}
 			
-		.text{
-			text-align: center;
+		#text1{
+			margin-left: 30px;
 		}
 		
-		.text1{
+		#text2{
 			margin-left: 15px;
 		}
 		
-		#top{
+		#text3{
+			margin-left: 70px;
+		}
+		
+		.text{
+			text-align: center;
+			margin-top: 80px;
+		}
+
+		.text1{
+			margin-left: 36px;
+			margin-top: 95px;
+		}
+		
+		.text2{
+			margin-left: 117px;
+			margin-top: 95px;
+		}
+		
+		.text3{
+			margin-left: 60px;
 			margin-top: 80px;
 		}
 		
-		#top2{
-			margin-top: 95px;
+		.top{
+			margin-top: 8px;		
 		}
-			
+	
+		.left{
+			margin-left: 18px;
+		}
+		
+		.left1{
+			margin-left: 22px;
+		}
+		
+		.left2{
+			margin-left: 52px;
+		}
+		
+		.btn2{
+			background-color: #9D9B9B;
+			color: white;
+			border-radius: 0px;
+		}
+		
+		.form-check{
+			margin-top: 4px;			
+		}
+		
+		.totalbox {
+			border: 2px solid;
+			width: 420px;
+		}
 	</style>
 </head>
     
@@ -240,13 +315,13 @@
 			<div class="col-6" id="text">
 				<span>상품정보</span>
 			</div>
-			<div class="col-2" id="text">
+			<div class="col-2" id="text1">
 				<span>판매가</span>
 			</div>
-			<div class="col-2" id="text">
+			<div class="col-1" id="text2">
 				<span>수량</span>
 			</div>
-			<div class="col-1" id="text">
+			<div class="col-1" id="text3">
 				<span>구매가</span>
 			</div>
 		</div>
@@ -255,18 +330,18 @@
 			<div class="col-2">
 				<img src="../image/winter.jpg">
 			</div>
-			<div class="col-4 text" id="top">
+			<div class="col-4 text">
 				<span>클리오</span>
 				<br>
 				<span id="font2">클리오 프로아이팔레트 AD</span>
 			</div>
-			<div class="col-2 text1" id="top2">
+			<div class="col-1 text1">
 				<span id="font2">32,000원</span>
 			</div>
-			<div class="col-1 text1" id="top2">
+			<div class="col-1 text2">
 				<span id="font2">1개</span>
 			</div>
-			<div class="col-2 text1" id="top">
+			<div class="col-1 text3">
 				<span id="font3">32,000원</span>
 				<br>
 				<span id="font2">22,400원</span>
@@ -383,7 +458,157 @@
 		<br>
 		<br>
 		<br>
-		<span id="font1">보유 쿠폰</span>
+		<div class="row">
+			<div class="col-7">
+				<span id="font1">보유 쿠폰</span>
+				<hr class="hr1">
+				<div class="row" id="bdiv1">
+					<div class="col-2 left">
+						<span>쿠폰명</span>
+					</div>
+					<div class="col-3 left1">
+						<span>금액</span>
+					</div>
+					<div class="col-2 left2">
+						<span>유효기간</span>
+					</div>
+				</div>
+				<hr class="hr1">
+				<div class="row" id="text">
+					<div class="col-3 top">
+						<span>신규 회원가입</span>
+					</div>
+					<div class="col-3">
+						<span>5,000원</span><br>
+						<span>(10,000원 이상 구매시)</span>
+					</div>
+					<div class="col-4 top">
+						<span>2022.06.30 ~ 2022.12.31</span>
+					</div>
+					<div class="col-2">
+						<button type="button" class="btn btn2">적용</button>
+					</div>
+				</div>
+				<hr class="hr1">
+				<div class="row" id="text">
+					<div class="col-3 top">
+						<span>첫구매 장바구니 쿠폰</span>
+					</div>
+					<div class="col-3">
+						<span>7,000원</span><br>
+						<span>(20,000원 이상 구매시)</span>
+					</div>
+					<div class="col-4 top">
+						<span>2022.07.03 ~ 2022.11.30</span>
+					</div>
+					<div class="col-2">
+						<button type="button" class="btn btn2">적용</button>
+					</div>
+				</div>
+				<hr class="hr1">
+				<div class="row" id="text">
+					<div class="col-3 top">
+						<span>쇼핑이 즐거운 화요일</span>
+					</div>
+					<div class="col-3">
+						<span>3,000원</span><br>
+						<span>(15,000원 이상 구매시)</span>
+					</div>
+					<div class="col-4 top">
+						<span>2022.07.26 ~ 2022.11.26</span>
+					</div>
+					<div class="col-2">
+						<button type="button" class="btn btn2">적용</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-4 left">
+				<span id="font1">최종 결제 정보</span>
+				<br>
+				<br>
+				<div class="row left totalbox">
+					<div class="col-4">
+						<br>
+						<span>총 상품 금액</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="hr1">
+		<br>
+		<br>
+		<br>
+		<span id="font1">결제수단</span>
+		<hr class="hr1">
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+			<label class="form-check-label" for="inlineRadio1">카카오페이</label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+			<label class="form-check-label" for="inlineRadio2">네이버페이</label>
+		</div>
+		<hr class="hr1">
+		<br>
+		<br>
+		<br>
+		<div class="accordion" id="accordionExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingOne">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					주문 상품정보 및 결제대행 서비스 이용약관에 모두 동의하십니까? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="flexCheckDefault2">
+						<label class="form-check-label" for="flexCheckDefault">
+							모두 동의
+						</label>
+					</div>
+				</button>
+				</h2>
+				<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<hr class="hr2">
+						<span id="font4">주문상품정보에 대한 동의</span>
+						<br>
+						<br>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								주문하실 상품, 가격, 배송정보, 할인내역등을 최종 확인하였으며, 구매에 동의합니다. (전상거래법 제8조 제2항)
+							</label>
+						</div>
+						<br>
+						<hr class="hr2">
+						<span id="font4">결제대행 서비스 이용약관 동의</span>
+						<br>
+						<br>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="flexCheckDefault2">
+							<label class="form-check-label" for="flexCheckDefault">
+								전자금융거래 기본약관
+							</label>
+						</div>
+						<br>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="flexCheckDefault2">
+							<label class="form-check-label" for="flexCheckDefault">
+								개인정보 수집 및 이용 동의
+							</label>
+						</div>
+						<br>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="flexCheckDefault2">
+							<label class="form-check-label" for="flexCheckDefault">
+								개인정보 제공 및 위탁 동의
+							</label>
+						</div>
+						<hr class="hr2">
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
 	</div>
 
 	<!-- #Footer -->
