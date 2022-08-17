@@ -33,7 +33,7 @@
 		}
 		
 		.mydiv2{
-			width: 1100px;
+			width: 1000px;
 		}
 		
 		#font{
@@ -57,10 +57,89 @@
 			font-size: 20px;
 		}
 		
+		#font5{
+			font-size: 15px;
+			color: #595959;
+			font-weight: bold;
+			text-align: center;
+		}
+		
+		#font6{
+			font-size: 12px;
+			color: #595959;
+		}
+		
+		#font7{
+			font-size: 15px;
+			color: #B01C1C;
+		}
+		
+		#font8{
+			font-size: 15px;
+			color: #B01C1C;
+			margin-left: 30px;
+		}
+		
 		hr{
 			border: 1px solid; 
     		display: block !important;
     		color: #090909;
+		}
+		
+		#bdiv{
+	   		background-color: #f7f7f7;
+	   		margin-left: 2px; 
+	   		line-height: 35px;
+	   		color: #3a3a3a;
+	   		font-size: 17px;
+	   		width: 1075px;
+	   		text-align: center;
+		}
+		
+		.text{
+			margin-top: 50px;
+			margin-left: 20px;
+		}
+		
+		.text1{
+			margin-top: 55px;
+			margin-left: 20px;
+		}
+		
+		.left{
+			margin-left: 64px;		
+		}
+		
+		.left2{
+			margin-left: 35px;		
+		}
+		
+		.left3{
+			margin-left: 25px;		
+		}
+		
+		.btn1{
+			background-color: #9DCC30;
+			color: white;
+			border-width: 1.5px;	
+			font-size: 18px;
+			font-weight: bold;
+			border-radius: 0px;
+			width: 150px;
+		}
+		
+		.btn2{
+			background-color: #0F1B5C;
+			color: white;
+			border-width: 1.5px;	
+			font-size: 18px;
+			font-weight: bold;
+			border-radius: 0px;
+			width: 150px;
+		}
+		
+		#btn{
+			text-align: center;
 		}
 		
 	</style>
@@ -208,7 +287,62 @@
 		<br>
 		<span id="font4">구매내역</span>	
 		<hr>	
-		
+		<div class="row" id="bdiv">
+			<div class="col-3 left">
+				<span>상품정보</span>
+			</div>
+			<div class="col-1 left2">
+				<span>수량</span>
+			</div>
+			<div class="col-2 left3">
+				<span>쿠폰적용</span>
+			</div>
+			<div class="col-1 left3">
+				<span>배송비</span>
+			</div>
+			<div class="col-1 left2">
+				<span>결제금액</span>
+			</div>
+			<div class="col-1 left2">
+				<span>주문번호</span>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-2">
+				<img src="../image/winter2.jpg">
+			</div>
+			<div class="col-2 text">
+				<center><span>클리오</span></center>
+				<span id="font5">클리오 프로아이팔레트 AD</span>
+			</div>
+			<div class="col-1 text1">
+				<span id="font5">1개</span>
+			</div>
+			<div class="col-2 text">
+				<span id="font5">첫구매 장바구니 쿠폰</span>
+				<br>
+				<span id="font8">-7,000원</span>
+			</div>
+			<div class="col-1 text1">
+				<span id="font5">0원</span>
+			</div>
+			<div class="col-1 text1">
+				<span id="font7">15,400원</span>
+			</div>
+			<div class="col-1 text1">
+				<span id="font5">5486121923</span>
+			</div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<div id="btn"> 
+			<button type="button" class="btn btn1 btn-lg" onClick="mypage()">마이페이지</button>
+			<button type="button" class="btn btn2 btn-lg" onClick="home()">계속 쇼핑하기</button>
+		</div>
+		<br>
+		<br>
 	</div>
 	
 	<!-- #Footer -->
@@ -283,6 +417,16 @@
 	        $('#back-to-top').tooltip('show');
 
 	    });
+	 
+	 function mypage()
+		{
+		     location.href = "../member/mypage.html";
+		}
+	 
+	 function home()
+		{
+		     location.href = "../item/itemList.html";
+		}
 	 
 </script>
 
