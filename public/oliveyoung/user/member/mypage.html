@@ -47,9 +47,37 @@
 		
 		.bg{
 			background-color: #DC8FB9;
-			height: 70px;
+			height: 55px;
 			margin-left: 10px;
 			width: 840px;
+		}
+		
+		.cursor{
+			cursor: pointer;
+		}
+		
+		.user{
+			font-size: 35px;
+		}
+		
+		.sort{
+			margin-top: 10px;
+			margin-left: 40px;
+			color: #595959;
+		}
+		
+		.white{
+			margin-top: 18px;
+			font-size: 21px;
+			font-weight: bold;
+			color: white;
+		}
+		
+		.profile{
+			font-size: 16px;
+			color: white;
+			margin-top: 18px;
+			margin-left: 230px;
 		}
 		
 	</style>
@@ -173,28 +201,38 @@
 
 	<div class= "container" id="wid">
 		<br>
-		
 		<br>
 		<div class="row">
 			<div class="col-2 text">
-				<span>마이페이지</span>
+				<span class="cursor" onClick="my()">마이페이지</span>
 				<br>
 				<br>
 				<ul class="nav flex-column">
 					<li class="nav-item">
-						<a class="nav-link" href="mypageProfile.html">나의 프로필</a>
+						<a class="nav-link" href="mypageOrder.html">주문/배송 조회</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="mypageOrder.html">주문/배송 조회</a>
+						<a class="nav-link" href="mypageSecession.html">회원 탈퇴</a>
 					</li>
 				</ul>
 			</div>
 			<br>
 			<br>
-			
 			<div class="col-9 bg">
-			ada
+				<div class="row">
+					<div class="col-1 sort">
+						<span class="user"><i class="fa-solid fa-circle-user"></i></span>
+					</div>
+					<div class="col-5 white">
+						<span>PINK OLIVE 최유진님 반갑습니다.</span>
+					</div>
+					<div class="col-2 profile">
+						<span>나의 프로필 &nbsp;&nbsp;&nbsp; ></span>
+					</div>
+				</div>
 			</div>
+		</div>
+		
 		</div>
 	</div>
 	
@@ -271,6 +309,11 @@
 
 	    });
 	 
+	 
+	 function my()
+		{
+		     location.href = "mypage.html";
+		}
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

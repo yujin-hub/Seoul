@@ -45,6 +45,10 @@
 			color: #ce63be !important;
 		}
 		
+		.cursor{
+			cursor: pointer;
+		}
+		
 	</style>
 </head>
     
@@ -170,15 +174,15 @@
 		<br>
 		<div class="row">
 			<div class="col-2 text">
-				<span>마이페이지</span>
+				<span class="cursor" onClick="my()">마이페이지</span>
 				<br>
 				<br>
 				<ul class="nav flex-column">
 					<li class="nav-item">
-						<a class="nav-link" href="mypageProfile.html">나의 프로필</a>
+						<a class="nav-link" href="mypageOrder.html">주문/배송 조회</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="mypageOrder.html">주문/배송 조회</a>
+						<a class="nav-link" href="mypageSecession.html">회원 탈퇴</a>
 					</li>
 				</ul>
 			</div>
@@ -260,6 +264,11 @@
 
 	    });
 	 
+	 
+	 function my()
+		{
+		     location.href = "mypage.html";
+		}
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
