@@ -50,6 +50,7 @@
 			height: 55px;
 			margin-left: 10px;
 			width: 840px;
+			border: 1px solid #9b9b9b;
 		}
 		
 		.cursor{
@@ -67,8 +68,8 @@
 		}
 		
 		.white{
-			margin-top: 18px;
-			font-size: 21px;
+			margin-top: 19px;
+			font-size: 18px;
 			font-weight: bold;
 			color: white;
 		}
@@ -78,6 +79,88 @@
 			color: white;
 			margin-top: 18px;
 			margin-left: 230px;
+		}
+		
+		.font{
+			font-size: 17px;
+			margin-top: 30px;
+		}
+		
+		.font2{
+			font-size: 17px;
+			font-weight: bold;
+			color: #C23434;
+			margin-top: 30px;
+		}
+		
+		.font3{
+			font-size: 20px;
+			font-weight: bold;
+		}
+		
+		.font4{
+			font-size: 12px;
+		}
+		
+		.font5{
+			font-size: 100px;
+			color: #DFDFDF;
+			text-align: center;
+		}
+		
+		.font6{
+			font-size: 15px;
+			text-align: center;
+		}
+		
+		.left{
+			margin-left: 100px;
+		}	
+		
+		.mydiv{
+			background-color: #F9F9F9; 
+			width: 840px;
+		}
+			
+		.wid2{
+			width: 13%;
+			text-align: center;
+		}
+		
+		.wid3{
+			width: 7%;
+			text-align: center;
+		}
+		
+		#num{
+			font-size: 45px;
+			font-weight: bold;
+		}
+		
+		#num2{
+			font-size: 45px;
+			color: #9DCC30;
+			font-weight: bold;
+		}
+		
+		#size{
+			font-size: 23px;
+		}
+		
+		.mid{
+			margin-left: 30px;
+		}
+		
+		hr{
+			border: 1px solid; 
+    		display: block !important;
+    		width: 840px !important;
+		}
+		
+		.hr2{
+			border: 1px solid; 
+    		display: block !important;
+    		width: 400px !important;
 		}
 		
 	</style>
@@ -218,21 +301,143 @@
 			</div>
 			<br>
 			<br>
-			<div class="col-9 bg">
+			<div class="col-10 bg">
 				<div class="row">
 					<div class="col-1 sort">
 						<span class="user"><i class="fa-solid fa-circle-user"></i></span>
 					</div>
 					<div class="col-5 white">
-						<span>PINK OLIVE 최유진님 반갑습니다.</span>
+						<span>PINK OLIVE &nbsp;&nbsp;최유진님 반갑습니다.</span>
 					</div>
 					<div class="col-2 profile">
 						<span>나의 프로필 &nbsp;&nbsp;&nbsp; ></span>
 					</div>
+					<div class="row left">
+						<div class="col-4">
+							<div class="font">
+								<span>CJ ONE 포인트</span>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<span class="font2">200 p</span>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="font">
+								<span>쿠폰</span>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<span class="font2">3 개</span>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="font">
+								<span>예치금</span>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<span class="font2">0 원</span>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-2">
+			</div>
+			<div class="col-10">
+				<span class="font3">주문/배송</span>
+				&nbsp;&nbsp;
+				<span class="font4">(최근&nbsp;1개월)</span>
+				<br>
+				<br>
+				<div class="mydiv">
+					<br>
+					<br>
+					<div class="row mid">
+						<div class="col-1 wid2">
+							<span id="num">0</span>
+							<br>
+							<span>주문접수</span>
+						</div>
+						<div class="col-1 wid3">
+							<span id="size"><i class="fa-solid fa-angle-right"></i></span>
+						</div>
+						<div class="col-1 wid2">
+							<span id="num">0</span>
+							<br>
+							<span>결제완료</span>
+						</div>
+						<div class="col-1 wid3">
+							<span id="size"><i class="fa-solid fa-angle-right"></i></span>
+						</div>
+						<div class="col-1 wid2">
+							<span id="num">0</span>
+							<br>
+							<span>상품준비중</span>
+						</div>
+						<div class="col-1 wid3">
+							<span id="size"><i class="fa-solid fa-angle-right"></i></span>
+						</div>
+						<div class="col-1 wid2">
+							<span id="num">0</span>
+							<br>
+							<span>배송중</span>
+						</div>
+						<div class="col-1 wid3">
+							<span id="size"><i class="fa-solid fa-angle-right"></i></span>
+						</div>
+						<div class="col-1 wid2">
+							<span id="num2">1</span>
+							<br>
+							<span>배송완료</span>
+						</div>
+					</div>
+					<br>
+					<br>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-2">
+			</div>
+			<div class="col-10">
+				<span class="font3">좋아요</span>
+				<hr>
+				<br>
+				<br>
+				<br>
+				<div class="font5">
+					<i class="fa-solid fa-circle-exclamation"></i>
+				</div>
+				<br>
+				<div class="font6">
+					<span>좋아요한 상품이 없습니다.</span>
+				</div>
+				<br>
+				<br>				
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-2">
+			</div>
+			<div class="col-10">
+				<div class="row">
+					<div class="col-6">
+						<span class="font3">1 : 1 문의내역</span>
+						<hr class="hr2">
+					</div>
+					<div class="col-6">
+						<span class="font3">상품 Q&A 내역</span>
+						<hr class="hr2">
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	
