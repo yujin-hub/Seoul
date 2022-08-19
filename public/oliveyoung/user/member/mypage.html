@@ -46,11 +46,10 @@
 		}
 		
 		.bg{
-			background-color: #DC8FB9;
+			background-color: #f17d9e;
 			height: 55px;
 			margin-left: 10px;
 			width: 840px;
-			border: 1px solid #9b9b9b;
 		}
 		
 		.cursor{
@@ -310,7 +309,7 @@
 						<span>PINK OLIVE &nbsp;&nbsp;최유진님 반갑습니다.</span>
 					</div>
 					<div class="col-2 profile">
-						<span>나의 프로필 &nbsp;&nbsp;&nbsp; ></span>
+						<span class="cursor" onClick="profile()">나의 프로필 &nbsp;&nbsp;&nbsp; ></span>
 					</div>
 					<div class="row left">
 						<div class="col-4">
@@ -387,7 +386,7 @@
 							<span id="size"><i class="fa-solid fa-angle-right"></i></span>
 						</div>
 						<div class="col-1 wid2">
-							<span id="num2">1</span>
+							<span id="num2">2</span>
 							<br>
 							<span>배송완료</span>
 						</div>
@@ -431,12 +430,33 @@
 					<div class="col-6">
 						<span class="font3">1 : 1 문의내역</span>
 						<hr class="hr2">
+						<div class="font6">
+							<br>
+							<br>
+							<br>
+							<span>최근 1개월간 문의하신 내용이 없습니다.</span>
+							<br>
+							<br>
+							<br>
+						</div>
 					</div>
 					<div class="col-6">
 						<span class="font3">상품 Q&A 내역</span>
 						<hr class="hr2">
+						<div class="font6">
+							<br>
+							<br>
+							<br>
+							<span>최근 1개월간 문의하신 내용이 없습니다.</span>
+							<br>
+							<br>
+							<br>
+						</div>
 					</div>
 				</div>
+				<br>
+				<br>
+				<br>
 			</div>
 		</div>
 	</div>
@@ -519,6 +539,12 @@
 		{
 		     location.href = "mypage.html";
 		}
+	 
+	 function profile()
+		{
+		     location.href = "mypageProfile.html";
+		}
+	 
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

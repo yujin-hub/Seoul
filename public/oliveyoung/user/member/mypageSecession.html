@@ -48,6 +48,53 @@
 		.cursor{
 			cursor: pointer;
 		}
+		
+		.bg{
+			background-color: #f17d9e;
+			height: 55px;
+			margin-left: 10px;
+			width: 840px;
+		}
+		
+		.sort{
+			margin-top: 10px;
+			margin-left: 40px;
+			color: #595959;
+		}
+		
+		.white{
+			margin-top: 19px;
+			font-size: 18px;
+			font-weight: bold;
+			color: white;
+		}
+		
+		.profile{
+			font-size: 16px;
+			color: white;
+			margin-top: 18px;
+			margin-left: 230px;
+		}
+		
+		.font{
+			font-size: 17px;
+			margin-top: 30px;
+		}
+		
+		.font2{
+			font-size: 17px;
+			font-weight: bold;
+			color: #C23434;
+			margin-top: 30px;
+		}
+		
+		.left{
+			margin-left: 100px;
+		}
+		
+		.user{
+			font-size: 35px;
+		}
 	</style>
 </head>
     
@@ -185,10 +232,43 @@
 					</li>
 				</ul>
 			</div>
-			<br>
-			<br>
+			<div class="col-10 bg">
+				<div class="row">
+					<div class="col-1 sort">
+						<span class="user"><i class="fa-solid fa-circle-user"></i></span>
+					</div>
+					<div class="col-5 white">
+						<span>PINK OLIVE &nbsp;&nbsp;최유진님 반갑습니다.</span>
+					</div>
+					<div class="col-2 profile">
+						<span class="cursor" onClick="profile()">나의 프로필 &nbsp;&nbsp;&nbsp; ></span>
+					</div>
+					<div class="row left">
+						<div class="col-4">
+							<div class="font">
+								<span>CJ ONE 포인트</span>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<span class="font2">200 p</span>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="font">
+								<span>쿠폰</span>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<span class="font2">3 개</span>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="font">
+								<span>예치금</span>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<span class="font2">0 원</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
 	
 	<!-- #Footer -->
 	<div id="Footer" class="m2105">
@@ -267,6 +347,11 @@
 	 function my()
 		{
 		     location.href = "mypage.html";
+		}
+	 
+	 function profile()
+		{
+		     location.href = "mypageProfile.html";
 		}
 </script>
 
