@@ -48,6 +48,30 @@
 		.cursor{
 			cursor: pointer;
 		}
+		
+		.pic{
+			border: 1px solid #C2C2C2;
+			border-radius: 5px;
+		}
+		
+		#pic{
+			border-radius: 100%;
+		}
+	
+		.hr1{
+			border: 1px solid; 
+    		display: block !important;
+    		width: 200px !important;
+		}
+
+		.btn1{
+			background-color: white;
+		}
+		
+		.nick{
+			margin-left: 70px;
+		}
+
 	</style>
 </head>
     
@@ -185,7 +209,21 @@
 				</ul>
 			</div>
 			<div class="col-10">
-				
+				<div class="row">
+					<div class="col-3 pic">
+						<br>
+						<br>
+						<center><img src="../image/pro.jpg" id="pic"></center>
+						<br>
+						<span class="nick">cuj0405 <button type="button" class="btn btn1" onClick="mod()"><i class="fa-solid fa-pen-clip"></i></button></span>
+						<br>
+						<hr class="hr1">
+						
+					</div>
+					<div class="col-9">
+					
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -267,6 +305,11 @@
 	 function my()
 		{
 		     location.href = "mypage.html";
+		}
+	 
+	 function mod()
+		{
+		     location.href = "mypageMod.html";
 		}
 </script>
 
