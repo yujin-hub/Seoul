@@ -497,7 +497,7 @@
 	 				<span class="notice">★ 상품 문의사항이 아닌 반품/교환관련 문의는 고객센터 1:1 문의를 이용해주세요.</span>
 	 				</div>
 	 				<div class="col-5">
-	 				<button type="button" class="btn btn-f" style="float: right; width: 120px;"><i class="fa-solid fa-pen-clip"></i> 상품문의</button>
+	 				<button type="button" class="btn btn-f" style="float: right; width: 120px;" onClick="qna()"><i class="fa-solid fa-pen-clip"></i> 상품문의</button>
 	 				</div>
 			 	</div>
 			 	<br>
@@ -1246,6 +1246,11 @@
 	 function buy()
 		{
 		     location.href = "../payment/payForm.html";
+		}
+	 
+	 function qna()
+		{
+		     location.href = "itemQnA.html";
 		}
 	 
 </script>
