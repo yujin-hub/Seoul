@@ -41,7 +41,7 @@
 			color: #353535;
 		}
 		
-		.ab:hover{
+		.ab:hover, .done:hover{
 			color: #ce63be !important;
 		}
 		
@@ -154,11 +154,28 @@
 		}
 
 		.wid{
-			width: 335px;
+			width: 470px;
 		}
 		
 		.wid2{
-			width: 335px;
+			width: 490px;
+		}
+		
+		.wid3{
+			width: 100px;
+		}
+		
+		.btn{
+			--bs-btn-border-color: #e8e8e8;
+		}
+		
+		.btn6{
+			--bs-btn-border-color: black;
+		}
+		
+		.btn-check:checked+.btn{
+			color: #9DCC30;
+			border-color: #9DCC30;
 		}
 		
 	</style>
@@ -376,9 +393,18 @@
 								<span>주소</span>
 							</div>
 							<div class="col-9">
-								<span>06611</span>
-								<br>
-								<span>서울특별시 서초구 서초대로77길 55 에이프로스퀘어 3층</span>
+								<div class="row">
+									<div class="col-3">
+										<input type="text" class="form-control wid3" value="06611" aria-label="post">
+									</div>
+									<div class="col-9">
+										<button type="button" class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+											우편번호 검색
+										</button>
+									</div>
+								</div>
+								<input type="text" class="form-control" aria-label="addr" aria-describedby="basic-addon1" value="서울특별시 서초구 서초대로77길 55">
+								<input type="text" class="form-control" aria-label="addr" aria-describedby="basic-addon1" value="에이프로스퀘어 3층">
 							</div>
 						</div>
 						<br>
@@ -387,7 +413,11 @@
 								<span>이메일</span>
 							</div>
 							<div class="col-9">
-								<span>cuj0405@naver.com</span>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control" value="cuj0405" aria-label="Username">
+									<span class="input-group-text">@</span>
+									<input type="text" class="form-control" value="naver.com" aria-label="Server">
+								</div>
 							</div>
 						</div>
 						<br>
@@ -397,12 +427,12 @@
 							</div>
 							<div class="col-9">	
 								<div class="row">
-									<div class="col-8">
+									<div class="col-9">
 										<input type="text" class="form-control" aria-label="nickname" aria-describedby="basic-addon1" value="유진">
 									</div>
-									<div class="col-4">
+									<div class="col-3">
 										<button type="button" class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-											닉네임 중복확인
+											중복확인
 										</button>
 									</div>
 								</div>
@@ -430,7 +460,7 @@
 								<span>피부 타입</span>
 							</div>
 							<div class="col-9">
-								<button type="button" class="btn btn3 btn-space active">지성</button>
+								<button type="button" class="btn btn3 btn-space">지성</button>
 								<button type="button" class="btn btn2 btn-space">건성</button>
 								<button type="button" class="btn btn2 btn-space">복합성</button>
 								<button type="button" class="btn btn2 btn-space">민감성</button>
@@ -450,7 +480,7 @@
 								<button type="button" class="btn btn2 btn-space">웜톤</button>
 								<button type="button" class="btn btn2 btn-space">봄웜톤</button>
 								<button type="button" class="btn btn2 btn-space">여름쿨톤</button>
-								<button type="button" class="btn btn3 btn-space active">가을웜톤</button>
+								<button type="button" class="btn btn3 btn-space">가을웜톤</button>
 								<button type="button" class="btn btn2 btn-space">겨울쿨톤</button>
 							</div>
 						</div>
@@ -463,19 +493,32 @@
 								<span class="font4">(복수 선택 가능)</span>
 							</div>
 							<div class="col-9">
-								<button type="button" class="btn btn5 btn-space active">잡티</button>
-								<button type="button" class="btn btn4 btn-space">미백</button>
-								<button type="button" class="btn btn4 btn-space">주름</button>
-								<button type="button" class="btn btn4 btn-space">각질</button>
-								<button type="button" class="btn btn5 btn-space active">트러블</button>
-								<button type="button" class="btn btn5 btn-space active">블랙헤드</button>
-								<button type="button" class="btn btn4 btn-space">피지과다</button>
-								<button type="button" class="btn btn5 btn-space active">민감성</button>
-								<button type="button" class="btn btn5 btn-space active">모공</button>
-								<button type="button" class="btn btn4 btn-space">탄력</button>
-								<button type="button" class="btn btn4 btn-space">홍조</button>
-								<button type="button" class="btn btn4 btn-space">아토피</button>
-								<button type="button" class="btn btn4 btn-space">다크서클</button>
+								<input type="checkbox" class="btn-check" id="interest14" name="problemSkin" value="14" checked>
+								<label class="btn btn5 btn-space" for="interest14">잡티</label>
+								<input type="checkbox" class="btn-check" id="interest15" name="problemSkin" value="15">
+								<label class="btn btn4 btn-space" for="interest15">미백</label>
+								<input type="checkbox" class="btn-check" id="interest16" name="problemSkin" value="16">
+								<label class="btn btn4 btn-space" for="interest16">주름</label>
+								<input type="checkbox" class="btn-check" id="interest17" name="problemSkin" value="17">
+								<label class="btn btn4 btn-space" for="interest17">각질</label>
+								<input type="checkbox" class="btn-check" id="interest18" name="problemSkin" value="18" checked>
+								<label class="btn btn5 btn-space" for="interest18">트러블</label>
+								<input type="checkbox" class="btn-check" id="interest19" name="problemSkin" value="19" checked>
+								<label class="btn btn5 btn-space" for="interest19">블랙헤드</label>
+								<input type="checkbox" class="btn-check" id="interest20" name="problemSkin" value="20">
+								<label class="btn btn4 btn-space" for="interest20">피지과다</label>
+								<input type="checkbox" class="btn-check" id="interest21" name="problemSkin" value="21" checked>
+								<label class="btn btn5 btn-space" for="interest21">민감성</label>
+								<input type="checkbox" class="btn-check" id="interest22" name="problemSkin" value="22" checked>
+								<label class="btn btn5 btn-space" for="interest22">모공</label>
+								<input type="checkbox" class="btn-check" id="interest23" name="problemSkin" value="23">
+								<label class="btn btn4 btn-space" for="interest23">탄력</label>
+								<input type="checkbox" class="btn-check" id="interest24" name="problemSkin" value="24">
+								<label class="btn btn4 btn-space" for="interest24">홍조</label>
+								<input type="checkbox" class="btn-check" id="interest25" name="problemSkin" value="25">
+								<label class="btn btn4 btn-space" for="interest25">아토피</label>
+								<input type="checkbox" class="btn-check" id="interest26" name="problemSkin" value="26">
+								<label class="btn btn4 btn-space" for="interest26">다크서클</label>
 							</div>
 						</div>
 						<br>
@@ -487,27 +530,48 @@
 								<span class="font4">(복수 선택 가능)</span>
 							</div>
 							<div class="col-9">
-								<button type="button" class="btn btn5 btn-space active">스킨케어</button>
-								<button type="button" class="btn btn4 btn-space">마스크팩</button>
-								<button type="button" class="btn btn4 btn-space">클렌징</button>
-								<button type="button" class="btn btn4 btn-space">선케어</button>
-								<button type="button" class="btn btn5 btn-space active">더모 코스메틱</button>
-								<button type="button" class="btn btn5 btn-space active">메이크업</button>
-								<button type="button" class="btn btn5 btn-space active">네일</button>
-								<button type="button" class="btn btn4 btn-space">바디케어</button>
-								<button type="button" class="btn btn5 btn-space active">헤어케어</button>
-								<button type="button" class="btn btn4 btn-space">향수/디퓨저</button>
-								<button type="button" class="btn btn5 btn-space active">미용소품</button>
-								<button type="button" class="btn btn4 btn-space">남성</button>
-								<button type="button" class="btn btn4 btn-space">건강/위생용품</button>
-								<button type="button" class="btn btn4 btn-space">건강식품</button>
-								<button type="button" class="btn btn4 btn-space">푸드</button>
-								<button type="button" class="btn btn4 btn-space">라이프/홈</button>
-								<button type="button" class="btn btn4 btn-space">반려동물</button>
-								<button type="button" class="btn btn4 btn-space">베이비</button>
+								<input type="checkbox" class="btn-check" id="interest27" name="interestSkin" value="27" checked>
+								<label class="btn btn5 btn-space" for="interest27">스킨케어</label>
+								<input type="checkbox" class="btn-check" id="interest28" name="interestSkin" value="28">
+								<label class="btn btn4 btn-space" for="interest28">마스크팩</label>
+								<input type="checkbox" class="btn-check" id="interest29" name="interestSkin" value="29">
+								<label class="btn btn4 btn-space" for="interest29">클렌징</label>
+								<input type="checkbox" class="btn-check" id="interest30" name="interestSkin" value="30">
+								<label class="btn btn4 btn-space" for="interest30">선케어</label>
+								<input type="checkbox" class="btn-check" id="interest31" name="interestSkin" value="31" checked>
+								<label class="btn btn5 btn-space" for="interest31">더모 코스메틱</label>
+								<input type="checkbox" class="btn-check" id="interest32" name="interestSkin" value="32" checked>
+								<label class="btn btn5 btn-space" for="interest32">메이크업</label>
+								<input type="checkbox" class="btn-check" id="interest33" name="interestSkin" value="33" checked>
+								<label class="btn btn5 btn-space" for="interest33">네일</label>
+								<input type="checkbox" class="btn-check" id="interest34" name="interestSkin" value="34">
+								<label class="btn btn4 btn-space" for="interest34">바디케어</label>
+								<input type="checkbox" class="btn-check" id="interest35" name="interestSkin" value="35" checked>
+								<label class="btn btn5 btn-space" for="interest35">헤어케어</label>
+								<input type="checkbox" class="btn-check" id="interest36" name="interestSkin" value="36">
+								<label class="btn btn4 btn-space" for="interest36">향수/디퓨저</label>
+								<input type="checkbox" class="btn-check" id="interest37" name="interestSkin" value="37" checked>
+								<label class="btn btn5 btn-space" for="interest37">미용소품</label>
+								<input type="checkbox" class="btn-check" id="interest38" name="interestSkin" value="38">
+								<label class="btn btn4 btn-space" for="interest38">남성</label>
+								<input type="checkbox" class="btn-check" id="interest39" name="interestSkin" value="39">
+								<label class="btn btn4 btn-space" for="interest39">건강/위생용품</label>
+								<input type="checkbox" class="btn-check" id="interest40" name="interestSkin" value="40">
+								<label class="btn btn4 btn-space" for="interest40">건강식품</label>
+								<input type="checkbox" class="btn-check" id="interest41" name="interestSkin" value="41">
+								<label class="btn btn4 btn-space" for="interest41">푸드</label>
+								<input type="checkbox" class="btn-check" id="interest42" name="interestSkin" value="42">
+								<label class="btn btn4 btn-space" for="interest42">라이프/홈</label>
+								<input type="checkbox" class="btn-check" id="interest43" name="interestSkin" value="43">
+								<label class="btn btn4 btn-space" for="interest43">반려동물</label>
+								<input type="checkbox" class="btn-check" id="interest44" name="interestSkin" value="44">
+								<label class="btn btn4 btn-space" for="interest44">베이비</label>
 							</div>
 						</div>
 						<br>
+						<hr class="hr1">
+						<br>
+						<span style="float: right; font-size: 15px;" class="cursor done" onClick="pro()"><i class="fa-solid fa-check-double"> 수정 완료</i></span>
 					</div>
 				</div>
 			</div>
@@ -561,8 +625,8 @@
 		</div>
 	</div>
 
-	<a id="back-to-top" href="#" class="btn btn-outline-dark back-to-top-css" role="button" title="Move Top" data-toggle="tooltip" data-placement="left">
-	<span class="glyphicon glyphicon-chevron-up"><i class="fa-solid fa-angles-up"></i><br>TOP</span>
+	<a id="back-to-top" href="#" class="btn btn6 btn-outline-dark back-to-top-css" role="button" title="Move Top" data-toggle="tooltip" data-placement="left">
+		<span class="glyphicon glyphicon-chevron-up"><i class="fa-solid fa-angles-up"></i><br>TOP</span>
 	</a>
 
 <script type="text/javascript">
@@ -591,6 +655,11 @@
 	 function my()
 		{
 		     location.href = "mypage.html";
+		}
+	 
+	 function pro()
+		{
+		     location.href = "mypageProfile.html";
 		}
 	 
 </script>
