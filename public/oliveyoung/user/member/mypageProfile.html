@@ -52,7 +52,7 @@
 		.pic{
 			border: 1px solid #C2C2C2;
 			border-radius: 15px;
-			height: 300px;
+			height: 285px;
 		}
 		
 		#pic{
@@ -74,6 +74,7 @@
 
 		.btn1{
 			background-color: white;
+			--bs-btn-hover-border-color: white; 
 		}
 		
 		.nick{
@@ -145,6 +146,10 @@
 			color: #9DCC30 (--bs-btn-active-color);
    			--bs-btn-active-border-color: #9DCC30;
    			--bs-btn-active-color: #9DCC30;
+		}
+		
+		.mid{
+			text-align: center;
 		}
 		
 	</style>
@@ -290,9 +295,26 @@
 						<br>
 						<center><img src="../image/pro.jpg" id="pic"></center>
 						<br>
-						<span class="nick">cuj0405 <button type="button" class="btn btn1" onClick="mod()"><i class="fa-solid fa-gear"></i></button></span>
+						<span class="nick">cuj0405<button type="button" class="btn btn1" onClick="mod()"><i class="fa-solid fa-gear"></i></button></span>
 						<br>
 						<hr>
+						<div class="row mid">
+							<div class="col-4">
+								<span>리뷰</span>
+								<br>
+								<span>0</span>
+							</div>
+							<div class="col-4">
+								<span>도움</span>
+								<br>
+								<span>0</span>
+							</div>
+							<div class="col-4">
+								<span>랭킹</span>
+								<br>
+								<span>0</span>
+							</div>
+						</div>
 					</div>
 					<div class="col-9 font">
 						<span class="font1">기본 프로필</span>
@@ -304,6 +326,24 @@
 							</div>
 							<div class="col-9 font3">
 								<span>최유진</span>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-2 font2">
+								<span>성별</span>
+							</div>
+							<div class="col-9 font3">
+								<span>여성</span>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-2 font2">
+								<span>생년월일</span>
+							</div>
+							<div class="col-9 font3">
+								<span>1999.04.05</span>
 							</div>
 						</div>
 						<br>
@@ -324,6 +364,15 @@
 								<span>06611</span>
 								<br>
 								<span>서울특별시 서초구 서초대로77길 55 에이프로스퀘어 3층</span>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-2 font2">
+								<span>이메일</span>
+							</div>
+							<div class="col-9 font3">
+								<span>cuj0405@naver.com</span>
 							</div>
 						</div>
 						<br>

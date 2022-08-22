@@ -48,6 +48,116 @@
 		.cursor{
 			cursor: pointer;
 		}
+		
+		.pic{
+			border: 1px solid #C2C2C2;
+			border-radius: 15px;
+			height: 290px;
+		}
+		
+		#pic{
+			border-radius: 100%;
+		}
+	
+		hr{
+			border: 1px solid; 
+    		display: block !important;
+    		width: 200px !important;
+		}
+		
+		.hr1{
+			border: 1px solid; 
+    		display: block !important;
+    		width: 620px !important;
+    		margin-left: 15px;
+		}
+
+		.btn1{
+			background-color: white;
+			--bs-btn-hover-border-color: white; 
+		}
+		
+		.nick{
+			margin-left: 62px;
+			font-size: 17px;
+		}
+		
+		.font{
+			margin-top: 10px;
+		}
+		
+		.font1{
+			font-size: 20px;
+			font-weight: bold;
+			margin-left: 15px;
+		}
+		
+		.font2{
+			font-size: 16px;
+			font-weight: bold;
+			margin-left: 15px;
+			margin-top: 10px;
+		}
+		
+		.font3{
+			font-size: 16px;
+			margin-left: 15px;
+		}
+		
+		.font4{
+			font-size: 12px;
+		}
+
+		.left{
+			margin-left: 16px;
+			font-size: 13px;
+		}
+
+		.left1{
+			margin-left: 25px;
+		}
+		
+		.btn2{
+			margin-top: 13px;
+			--bs-btn-border-color: #e8e8e8;
+			--bs-btn-hover-color: #9DCC30;
+			--bs-btn-hover-border-color: #9DCC30; 
+		}
+		
+		.btn3{
+			margin-top: 13px;
+			color: #9DCC30 (--bs-btn-active-color);
+   			--bs-btn-active-border-color: #9DCC30;
+   			--bs-btn-active-color: #9DCC30;
+		}
+
+		.btn-space{
+		    margin-right: 5px;
+		}
+		
+		.btn4{
+			margin-top: 13px;
+			--bs-btn-border-color: #e8e8e8;
+			--bs-btn-hover-color: #9DCC30;
+			--bs-btn-hover-border-color: #9DCC30; 
+		}
+		
+		.btn5{
+			margin-top: 13px;
+			color: #9DCC30 (--bs-btn-active-color);
+   			--bs-btn-active-border-color: #9DCC30;
+   			--bs-btn-active-color: #9DCC30;
+		}
+		
+		.mid{
+			text-align: center;
+		}
+		
+		.form-check{
+			padding-left: 0em;		
+			margin-top: 10px;
+		}
+
 	</style>
 </head>
     
@@ -167,7 +277,7 @@
 		</div>
 	</div>
 
-	<div class= "container" id="wid">
+	<div class="container" id="wid">
 		<br>
 		<br>
 		<div class="row">
@@ -184,8 +294,210 @@
 					</li>
 				</ul>
 			</div>
-			<br>
-			<br>
+			<div class="col-10">
+				<div class="row">
+					<div class="col-3 pic">
+						<br>
+						<br>
+						<center><img src="../image/pro.jpg" id="pic"></center>
+						<br>
+						<input type="text" class="form-control mid" aria-label="id" aria-describedby="basic-addon1" value="cuj0405">
+						<hr>
+						<div class="row mid">
+							<div class="col-4">
+								<span>리뷰</span>
+								<br>
+								<span>0</span>
+							</div>
+							<div class="col-4">
+								<span>도움</span>
+								<br>
+								<span>0</span>
+							</div>
+							<div class="col-4">
+								<span>랭킹</span>
+								<br>
+								<span>0</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-9 font">
+						<span class="font1">기본 프로필</span>
+						<hr class="hr1">
+						<br>
+						<div class="row">
+							<div class="col-2 font2">
+								<span>이름</span>
+							</div>
+							<div class="col-9">
+								<input type="text" class="form-control" aria-label="name" aria-describedby="basic-addon1" value="최유진">
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-2 font2">
+								<span>성별</span>
+							</div>
+							<div class="col-9">
+								<div class="form-check form-check-inline">
+									  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+									  <label class="form-check-label" for="inlineRadio1">남성</label>
+								</div>
+								<div class="form-check form-check-inline">
+									  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
+									  <label class="form-check-label" for="inlineRadio2">여성</label>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-2 font2">
+								<span>생년월일</span>
+							</div>
+							<div class="col-9">
+								<input type="date" class="form-control" aria-label="dob" aria-describedby="basic-addon1" value="1999-04-05">
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-2 font2">
+								<span>휴대폰</span>
+							</div>
+							<div class="col-9 font3">
+								<span>010-1111-1111</span>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-2 font2">
+								<span>주소</span>
+							</div>
+							<div class="col-9 font3">
+								<span>06611</span>
+								<br>
+								<span>서울특별시 서초구 서초대로77길 55 에이프로스퀘어 3층</span>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-2 font2">
+								<span>이메일</span>
+							</div>
+							<div class="col-9 font3">
+								<span>cuj0405@naver.com</span>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-2 font2">
+								<span>닉네임</span>
+							</div>
+							<div class="col-9 font3">
+								<span>유진</span>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-2 font2">
+								<span>자기소개</span>
+							</div>
+							<div class="col-9 font3">
+								<span>뷰티에 관심이 많은 20대입니다~!</span>
+							</div>
+						</div>
+						<br>
+						<hr class="hr1">
+						<br>
+						<span class="font1">나의 피부 컨디션 & 관심 카테고리</span>
+						<br>
+						<span class="left">나와 비슷한 피부 컨디션을 가진 고객의 리뷰와 나에게 딱 맞는 상품을 모아볼 수 있어요</span>
+						<div class="row">
+							<div class="col-2 left1">
+								<br>
+								<span>피부 타입</span>
+							</div>
+							<div class="col-9">
+								<button type="button" class="btn btn3 btn-space active">지성</button>
+								<button type="button" class="btn btn2 btn-space">건성</button>
+								<button type="button" class="btn btn2 btn-space">복합성</button>
+								<button type="button" class="btn btn2 btn-space">민감성</button>
+								<button type="button" class="btn btn2 btn-space">약건성</button>
+								<button type="button" class="btn btn2 btn-space">트러블성</button>
+								<button type="button" class="btn btn2 btn-space">중성</button>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-2 left1">
+								<br>
+								<span>피부 톤</span>
+							</div>
+							<div class="col-9">
+								<button type="button" class="btn btn2 btn-space">쿨톤</button>
+								<button type="button" class="btn btn2 btn-space">웜톤</button>
+								<button type="button" class="btn btn2 btn-space">봄웜톤</button>
+								<button type="button" class="btn btn2 btn-space">여름쿨톤</button>
+								<button type="button" class="btn btn3 btn-space active">가을웜톤</button>
+								<button type="button" class="btn btn2 btn-space">겨울쿨톤</button>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-2 left1">
+								<br>
+								<span>피부 고민</span>
+								<br>
+								<span class="font4">(복수 선택 가능)</span>
+							</div>
+							<div class="col-9">
+								<button type="button" class="btn btn5 btn-space active">잡티</button>
+								<button type="button" class="btn btn4 btn-space">미백</button>
+								<button type="button" class="btn btn4 btn-space">주름</button>
+								<button type="button" class="btn btn4 btn-space">각질</button>
+								<button type="button" class="btn btn5 btn-space active">트러블</button>
+								<button type="button" class="btn btn5 btn-space active">블랙헤드</button>
+								<button type="button" class="btn btn4 btn-space">피지과다</button>
+								<button type="button" class="btn btn5 btn-space active">민감성</button>
+								<button type="button" class="btn btn5 btn-space active">모공</button>
+								<button type="button" class="btn btn4 btn-space">탄력</button>
+								<button type="button" class="btn btn4 btn-space">홍조</button>
+								<button type="button" class="btn btn4 btn-space">아토피</button>
+								<button type="button" class="btn btn4 btn-space">다크서클</button>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-2 left1">
+								<br>
+								<span>관심 카테고리</span>
+								<br>
+								<span class="font4">(복수 선택 가능)</span>
+							</div>
+							<div class="col-9">
+								<button type="button" class="btn btn5 btn-space active">스킨케어</button>
+								<button type="button" class="btn btn4 btn-space">마스크팩</button>
+								<button type="button" class="btn btn4 btn-space">클렌징</button>
+								<button type="button" class="btn btn4 btn-space">선케어</button>
+								<button type="button" class="btn btn5 btn-space active">더모 코스메틱</button>
+								<button type="button" class="btn btn5 btn-space active">메이크업</button>
+								<button type="button" class="btn btn5 btn-space active">네일</button>
+								<button type="button" class="btn btn4 btn-space">바디케어</button>
+								<button type="button" class="btn btn5 btn-space active">헤어케어</button>
+								<button type="button" class="btn btn4 btn-space">향수/디퓨저</button>
+								<button type="button" class="btn btn5 btn-space active">미용소품</button>
+								<button type="button" class="btn btn4 btn-space">남성</button>
+								<button type="button" class="btn btn4 btn-space">건강/위생용품</button>
+								<button type="button" class="btn btn4 btn-space">건강식품</button>
+								<button type="button" class="btn btn4 btn-space">푸드</button>
+								<button type="button" class="btn btn4 btn-space">라이프/홈</button>
+								<button type="button" class="btn btn4 btn-space">반려동물</button>
+								<button type="button" class="btn btn4 btn-space">베이비</button>
+							</div>
+						</div>
+						<br>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	
@@ -267,6 +579,7 @@
 		{
 		     location.href = "mypage.html";
 		}
+	 
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
