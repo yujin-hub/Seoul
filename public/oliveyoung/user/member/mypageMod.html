@@ -99,11 +99,6 @@
 			margin-top: 10px;
 		}
 		
-		.font3{
-			font-size: 16px;
-			margin-left: 15px;
-		}
-		
 		.font4{
 			font-size: 12px;
 		}
@@ -158,6 +153,14 @@
 			margin-top: 10px;
 		}
 
+		.wid{
+			width: 335px;
+		}
+		
+		.wid2{
+			width: 335px;
+		}
+		
 	</style>
 </head>
     
@@ -329,7 +332,7 @@
 							<div class="col-2 font2">
 								<span>이름</span>
 							</div>
-							<div class="col-9">
+							<div class="col-9 wid">
 								<input type="text" class="form-control" aria-label="name" aria-describedby="basic-addon1" value="최유진">
 							</div>
 						</div>
@@ -338,7 +341,7 @@
 							<div class="col-2 font2">
 								<span>성별</span>
 							</div>
-							<div class="col-9">
+							<div class="col-9 wid">
 								<div class="form-check form-check-inline">
 									  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
 									  <label class="form-check-label" for="inlineRadio1">남성</label>
@@ -354,7 +357,7 @@
 							<div class="col-2 font2">
 								<span>생년월일</span>
 							</div>
-							<div class="col-9">
+							<div class="col-9 wid">
 								<input type="date" class="form-control" aria-label="dob" aria-describedby="basic-addon1" value="1999-04-05">
 							</div>
 						</div>
@@ -363,8 +366,8 @@
 							<div class="col-2 font2">
 								<span>휴대폰</span>
 							</div>
-							<div class="col-9 font3">
-								<span>010-1111-1111</span>
+							<div class="col-9 wid">
+								<input type="text" class="form-control" aria-label="tel" aria-describedby="basic-addon1" value="010-1111-1111">
 							</div>
 						</div>
 						<br>
@@ -372,7 +375,7 @@
 							<div class="col-2 font2">
 								<span>주소</span>
 							</div>
-							<div class="col-9 font3">
+							<div class="col-9">
 								<span>06611</span>
 								<br>
 								<span>서울특별시 서초구 서초대로77길 55 에이프로스퀘어 3층</span>
@@ -383,7 +386,7 @@
 							<div class="col-2 font2">
 								<span>이메일</span>
 							</div>
-							<div class="col-9 font3">
+							<div class="col-9">
 								<span>cuj0405@naver.com</span>
 							</div>
 						</div>
@@ -392,8 +395,17 @@
 							<div class="col-2 font2">
 								<span>닉네임</span>
 							</div>
-							<div class="col-9 font3">
-								<span>유진</span>
+							<div class="col-9">	
+								<div class="row">
+									<div class="col-8">
+										<input type="text" class="form-control" aria-label="nickname" aria-describedby="basic-addon1" value="유진">
+									</div>
+									<div class="col-4">
+										<button type="button" class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+											닉네임 중복확인
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<br>
@@ -401,8 +413,9 @@
 							<div class="col-2 font2">
 								<span>자기소개</span>
 							</div>
-							<div class="col-9 font3">
-								<span>뷰티에 관심이 많은 20대입니다~!</span>
+							<div class="col-9 wid2">
+								<input type="text" class="form-control" aria-label="intro" aria-describedby="basic-addon1" value="뷰티에 관심이 많은 20대입니다~!">
+								<span style="float: right;">19/100</span>
 							</div>
 						</div>
 						<br>
