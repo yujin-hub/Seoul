@@ -87,11 +87,6 @@
 			font-size: 16px;
 		  }
 		
-		label:hover {
-			color: #9DCC30;
-			cursor: pointer;
-		}
-		
 		input:checked + label {
 			 color: #9DCC30;
 			 border: 2px solid #9DCC30;
@@ -99,12 +94,10 @@
 			 border-bottom: 1px solid #ffffff;
 		  }
 		
-		#tab1:checked ~ #content1,
-		#tab2:checked ~ #content2,
-		#tab3:checked ~ #content3 {
+		#tab1:checked ~ #content1 {
 			display: block;
 		}
-		  
+		
 		.mid{
   			text-align: center;
   		}
@@ -298,10 +291,10 @@
 			<input class="input" id="tab1" type="radio" name="tabs" checked> 
 			<label for="tab1">회원 목록</label>
 			
-			<input class="input" id="tab2" type="radio" name="tabs">
+			<input class="input" id="tab2" type="radio" name="tabs" disabled>
 			<label for="tab2">회원정보 확인</label>
 			
-			<input class="input" id="tab3" type="radio" name="tabs">
+			<input class="input" id="tab3" type="radio" name="tabs" disabled>
 			<label for="tab3">회원정보 수정</label>
 			
 			
@@ -484,13 +477,6 @@
 				</div>
 			</section>
 			
-			<section id="content2">
-				
-			</section>
-			
-			<section id="content3">
-			
-			</section>
 		</div>
 	</div> 	
 	
