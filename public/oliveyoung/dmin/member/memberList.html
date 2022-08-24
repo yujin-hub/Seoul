@@ -13,6 +13,7 @@
 	<meta property="og:description" content="대한민국 NO.1 헬스&뷰티 스토어 OLIVEYOUNG" >
 
 	<title>회원관리 (회원목록)</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.oliveyoung.co.kr/pc-static-root/css/style.css?dumm=202207250001">
     <link rel="shortcut icon" type="image/x-icon" href="https://cdn.icon-icons.com/icons2/236/PNG/256/Fruit_Olive_Green_26369.png"> 
@@ -351,7 +352,7 @@
 					<table class="table table-striped table-hover">
 						<thead>
 					  		<tr>
-					  			<th><input class="form-check-input" type="checkbox" name="check" id="allcheck"></th>
+					  			<th><input type="checkbox" id="chkAll" name="chkAll"></th>
 								<th>회원번호</th>
 								<th>회원등급</th>
 								<th>이름</th>
@@ -363,8 +364,8 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr class="cursor" onClick="check()">
-								<td onClick="event.cancelBubble=true"><input class="form-check-input" type="checkbox" name="check"></td>
+							<tr class="cursor" onClick="mem()">
+								<td onClick="event.cancelBubble = true"><input class="form-check-input" type="checkbox" name="chk"></td>
 								<td>45</td>
 								<td>핑크올리브</td>
 								<td>최유진</td>
@@ -375,7 +376,7 @@
 								<td>N</td>
 							</tr>
 							<tr>
-								<td><input class="form-check-input" type="checkbox" name="check"></td>
+								<td><input class="form-check-input" type="checkbox" name="chk"></td>
 								<td>23</td>
 								<td>베이비올리브</td>
 								<td>한민규</td>
@@ -386,7 +387,7 @@
 								<td>N</td>
 							</tr>
 							<tr>
-								<td><input class="form-check-input" type="checkbox" name="check"></td>
+								<td><input class="form-check-input" type="checkbox" name="chk"></td>
 								<td>39</td>
 								<td>골드올리브</td>
 								<td>신한별</td>
@@ -397,7 +398,7 @@
 								<td>N</td>
 							</tr>
 							<tr>
-								<td><input class="form-check-input" type="checkbox" name="check"></td>
+								<td><input class="form-check-input" type="checkbox" name="chk"></td>
 								<td>174</td>
 								<td>베이비올리브</td>
 								<td>남세은</td>
@@ -408,7 +409,7 @@
 								<td>N</td>
 							</tr>
 							<tr>
-								<td><input class="form-check-input" type="checkbox" name="check"></td>
+								<td><input class="form-check-input" type="checkbox" name="chk"></td>
 								<td>54</td>
 								<td>골드올리브</td>
 								<td>이효성</td>
@@ -419,7 +420,7 @@
 								<td>N</td>
 							</tr>
 							<tr>
-								<td><input class="form-check-input" type="checkbox" name="check"></td>
+								<td><input class="form-check-input" type="checkbox" name="chk"></td>
 								<td>17</td>
 								<td>핑크올리브</td>
 								<td>조광훈</td>
@@ -430,7 +431,7 @@
 								<td>N</td>
 							</tr>
 							<tr>
-								<td><input class="form-check-input" type="checkbox" name="check"></td>
+								<td><input class="form-check-input" type="checkbox" name="chk"></td>
 								<td>87</td>
 								<td>그린올리브</td>
 								<td>김정윤</td>
@@ -441,7 +442,7 @@
 								<td>N</td>
 							</tr>
 							<tr>
-								<td><input class="form-check-input" type="checkbox" name="check"></td>
+								<td><input class="form-check-input" type="checkbox" name="chk"></td>
 								<td>8</td>
 								<td>베이비올리브</td>
 								<td>김현지</td>
@@ -452,7 +453,7 @@
 								<td>N</td>
 							</tr>
 							<tr>
-								<td><input class="form-check-input" type="checkbox" name="check"></td>
+								<td><input class="form-check-input" type="checkbox" name="chk"></td>
 								<td>165</td>
 								<td>그린올리브</td>
 								<td>안효재</td>
@@ -463,7 +464,7 @@
 								<td>N</td>
 							</tr>
 							<tr>
-								<td><input class="form-check-input" type="checkbox" name="check"></td>
+								<td><input class="form-check-input" type="checkbox" name="chk"></td>
 								<td>92</td>
 								<td>블랙올리브</td>
 								<td>정유리</td>
@@ -549,25 +550,32 @@
 <script type="text/javascript">
 	 $(document).ready(function () {
 	        $(window).scroll(function () {
-	            if ($(this).scrollTop() > 50) {
-	                $('#back-to-top').fadeIn();
-	            } else {
-	                $('#back-to-top').fadeOut();
-	            }
+            	$('#back-to-top').fadeIn();
 	        });
 	        // scroll body to 0px on click
 	        $('#back-to-top').click(function () {
 	            $('#back-to-top').tooltip('hide');
-	            $('body,html').animate({
 	                scrollTop: 0
-	            }, 800);
+	            }, 100);
 	            return false;
 	        });
 
-	        $('#back-to-top').tooltip('show');
+	 	$(document).ready(function() {
+			$("#chkAll").click(function() {
+				if($("#chkAll").is(":checked")) $("input[name=chk]").prop("checked", true);
+				else $("input[name=chk]").prop("checked", false);
+			});
 
-	    });
-	 
+			$("input[name=chk]").click(function() {
+				var total = $("input[name=chk]").length;
+				var checked = $("input[name=chk]:checked").length;
+
+				if(total != checked) $("#chkAll").prop("checked", false);
+				else $("#chkAll").prop("checked", true); 
+			});
+		});
+		
+	 	
 	 function mypage()
 		{
 		     location.href = "../member/mypage.html";
@@ -578,30 +586,13 @@
 		     location.href = "../item/itemList.html";
 		}
 	 
-	 function check()
+	 function mem()
 		{
 		     location.href = "memberView.html";
 		}
 	 
-	 
-	 $(document).ready(function() {
-			$("#allcheck").click(function() {
-				if($("#allcheck").is(":checked")) $("input[name=check]").prop("checked", true);
-				else $("input[name=check]").prop("checked", false);
-			});
-
-			$("input[name=check]").click(function() {
-				var total = $("input[name=check]").length;
-				var checked = $("input[name=check]:checked").length;
-
-				if(total != checked) $("#allcheck").prop("checked", false);
-				else $("#allcheck").prop("checked", true); 
-			});
-		});
-	 
 </script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/d843c66cc1.js" crossorigin="anonymous"></script>
 </body>
