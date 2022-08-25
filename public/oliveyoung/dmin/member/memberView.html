@@ -42,6 +42,10 @@
 			width: 1100px;
 		}
 		
+		.wid2{
+			width: 970px;
+		}
+		
 		section {
 			display: none;
 			padding: 20px 0 0;
@@ -75,10 +79,77 @@
 			display: block;
 		}
 		
+		.font{
+			font-size: 16px;
+		}
+		
 		.font1{
 			font-size: 20px;
 			font-weight: bold;
 			margin-left: 15px;
+		}
+		
+		.font2{
+			font-size: 20px;
+			font-weight: bold;
+			margin-left: 15px;
+		}
+		
+		.form-label {
+		    margin-bottom: 0;
+		    padding: 5px;
+		    color: #595959;
+		}
+
+
+		.form-control:disabled, .form-control[readonly] {
+		    background-color: #ffffff;
+		    color: black;
+		    font-size: 15px;
+		}
+		
+		hr{
+			border: 1px solid; 
+    		display: block !important;
+    		width: 100% !important;
+    		color: #d1d1d1 !important;
+		}
+		
+		.top{
+			margin-top: 32px;
+		}
+		
+		.top2{
+			margin-top: 6px;
+		}
+		
+		.btn2{
+			--bs-btn-border-color: #e8e8e8;
+			--bs-btn-hover-color: #9DCC30;
+			--bs-btn-hover-border-color: #9DCC30; 
+		}
+		
+		.btn3{
+			color: #9DCC30 (--bs-btn-active-color);
+   			--bs-btn-active-border-color: #9DCC30;
+   			--bs-btn-active-color: #9DCC30;
+		}
+
+		.btn-space{
+		    margin-right: 15px;
+		}
+		
+		.btn-space1{
+		    margin-right: 5px;
+		}
+		
+		.btn4{
+			background-color: #FF5A79;
+			color: white;
+		}
+		
+		.mid{
+			text-align: center;
 		}
 		
 	</style>
@@ -225,9 +296,143 @@
 			
 			
 			<section id="content2">
-				<span class="font1"><i class="fa-solid fa-angle-right"></i> 기본 정보</span>
+				<span class="font1">기본 정보</span>
+				<div class="row">
+					<div class="col-4">
+						
+						<span class="font2"></span>
+					</div>
+					<div class="col-8">
+						<div class="row">
+							<div class="col-4">
+								<label for="name" class="form-label">성명</label>
+								<input class="form-control" type="text" value="최유진" aria-label="readonly input example" readonly>
+							</div>
+							<div class="col-3">
+								<label for="gender" class="form-label">성별</label>
+								<input class="form-control" type="text" value="여성" aria-label="readonly input example" readonly>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-4">
+								<label for="dob" class="form-label">생년월일</label>
+								<input class="form-control" type="date" value="1999-04-05" aria-label="readonly input example" readonly>
+							</div>
+							<div class="col-4">
+								<label for="tel" class="form-label">휴대폰</label>
+								<input class="form-control" type="text" value="010-1111-1111" aria-label="readonly input example" readonly>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-4">
+								<label for="grade" class="form-label">회원등급</label>
+								<input class="form-control" type="text" value="핑크올리브" aria-label="readonly input example" readonly>
+							</div>
+						</div>
+						<br>
+						<br>
+					</div>
+					<hr>
+				</div>
+				<br>
+				<span class="font1">필수입력 사항</span>
+				<br>
+				<br>
+				<div class="container wid2">
+					<div class="row">
+						<div class="col-4">
+							<label for="id" class="form-label">아이디</label>
+							<input class="form-control" type="text" value="cuj0405" aria-label="readonly input example" readonly>
+						</div>
+						<div class="col-4">
+							<label for="grade" class="form-label">비밀번호</label>
+							<input class="form-control" type="password" value="leiselfihw54" aria-label="readonly input example" readonly>
+						</div>
+						<div class="col-4">
+							<label for="grade" class="form-label">비밀번호 확인</label>
+							<input class="form-control" type="password" value="leiselfihw54" aria-label="readonly input example" readonly>
+						</div>
+					</div>
+					<br>
+					<label for="addr" class="form-label">주소 (자택)</label>
+					<div class="row">
+						<div class="col-3">
+							<input class="form-control" type="text" value="06322" aria-label="readonly input example" readonly>
+						</div>					
+					</div>
+					<input class="form-control" type="text" value="서울특별시 강남구 개포동 1282 개포 래미안 포레스트" aria-label="readonly input example" readonly>
+					<input class="form-control" type="text" value="109동 701호" aria-label="readonly input example" readonly>
+					<br>
+					<label for="addr2" class="form-label">주소 (직장)</label>
+					<div class="row">
+						<div class="col-3">
+							<input class="form-control" type="text" value="06611" aria-label="readonly input example" readonly>
+						</div>					
+					</div>
+					<input class="form-control" type="text" value="서울특별시 서초구 서초대로77길 55" aria-label="readonly input example" readonly>
+					<input class="form-control" type="text" value="에이프로스퀘어 3층" aria-label="readonly input example" readonly>
+					<br>
+					<div class="row">
+						<div class="col-1">
+							<label for="phone" class="form-label">연락처</label>
+							<input class="form-control" type="text" value="010" aria-label="readonly input example" readonly>
+						</div>
+						<div class="col-2 top">
+							<input class="form-control" type="text" value="1111" aria-label="readonly input example" readonly>
+						</div>
+						<div class="col-2 top">
+							<input class="form-control" type="text" value="1111" aria-label="readonly input example" readonly>
+						</div>
+						<div class="col-5">
+							<label for="phone" class="form-label">이메일</label>
+							<input class="form-control" type="text" value="cuj0405@naver.com" aria-label="readonly input example" readonly>
+						</div>
+					</div>
+				</div>
+				<br>
+				<hr>
+				<br>
+				<span class="font1">관심사</span>
+				<br>
+				<br>
+				<div class="container wid2">
+					<div class="row">
+						<div class="col-2 top2">
+							<span class="font">피부타입</span>		
+						</div>
+						<div class="col-10">
+							<button type="button" class="btn btn2 btn-space">건성</button>
+							<button type="button" class="btn btn3 btn-space active">지성</button>
+							<button type="button" class="btn btn2 btn-space">복합성</button>
+							<button type="button" class="btn btn2 btn-space">중성</button>				
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-2 top2">
+							<span class="font">관심분야</span>		
+						</div>
+						<div class="col-10">
+							<button type="button" class="btn btn2 btn-space">스킨케어</button>
+							<button type="button" class="btn btn3 btn-space active">지성</button>
+							<button type="button" class="btn btn2 btn-space">바디케어</button>
+							<button type="button" class="btn btn3 btn-space active">헤어</button>		
+							<button type="button" class="btn btn2 btn-space">건강</button>				
+						</div>
+					</div>
+					<br>
+				</div>
+				<hr>	
+				<br>
+				<div class="mid">
+					<a class="btn btn4 btn-space1" role="button" onClick="mod()"><i class="fa-solid fa-pen-clip"></i></a>							
+					<a class="btn btn4 btn-space1" role="button" onClick="list()"><i class="fa-solid fa-list"></i></a> 
+				</div>		
 			</section>
-			
+			<br>
+			<br>
 		</div>
 	</div> 	
 	
@@ -313,6 +518,17 @@
 		{
 		     location.href = "../item/itemList.html";
 		}
+	 
+	 function mod()
+		{
+		     location.href = "memberMod.html";
+		}
+	 
+	 function list()
+		{
+		     location.href = "memberList.html";
+		}
+	 
 	 
 </script>
 
