@@ -40,11 +40,11 @@
 		}
 		
 		.wid{
-			width: 1100px;
+			width: 1200px;
 		}
 		
 		.wid2{
-			width: 850px;
+			width: 800px;
 		}
 		
 		.wid3{
@@ -64,7 +64,7 @@
 		}
 		
 		.wid7{
-			width: 1080px;
+			width: 950px;
 		}
 		
 		section {
@@ -291,208 +291,226 @@
 	<br>
 	<br>
 	<div class="container wid">
-		<div class="main left2">
-			<input class="input" id="tab1" type="radio" name="tabs" checked> 
-			<label for="tab1">회원 목록</label>
-			
-			<input class="input" id="tab2" type="radio" name="tabs" disabled>
-			<label for="tab2">회원정보 확인</label>
-			
-			<input class="input" id="tab3" type="radio" name="tabs" disabled>
-			<label for="tab3">회원정보 수정</label>
-			
-			
-			<section id="content1">
-				<div class="container wid2">
-					<br>
-					<br>
-					<div class="container box">
-						<br>
-						<div class="container wid6">
-							<div class="row">
-								<div class="col-4">
-									<input type="text" class="form-control mid wid3" aria-label="accessdate" aria-describedby="basic-addon1" value="최근접속일" readonly>
-								</div>
-								<div class="col-4">
-									<input type="date" class="form-control mid wid4" aria-label="date" aria-describedby="basic-addon1">
-								</div>
-								<div class="col-4">
-									<input type="date" class="form-control mid wid4" aria-label="date" aria-describedby="basic-addon1">
-								</div>
-							</div>
+		<div class="row">
+			<div class="col-2">
+				<span>Setting</span>
+				<br>
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="memberlist.html">회원 관리</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="memberlist.html">상품 관리</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="memberlist.html">주문 관리</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-10">
+				<div class="main left2">
+					<input class="input" id="tab1" type="radio" name="tabs" checked> 
+					<label for="tab1">회원 목록</label>
+					
+					<input class="input" id="tab2" type="radio" name="tabs" disabled>
+					<label for="tab2">회원정보 확인</label>
+					
+					<input class="input" id="tab3" type="radio" name="tabs" disabled>
+					<label for="tab3">회원정보 수정</label>
+					
+					
+					<section id="content1">
+						<div class="container wid2">
 							<br>
-							<div class="row">
-								<div class="col-4">
-								<select class="form-select wid3" aria-label="Default select example">
-									<option selected class="mid">::검색 조건::</option>
-									<option value="1">회원번호</option>
-									<option value="2">회원등급</option>
-									<option value="3">이름</option>
-									<option value="4">성별</option>
-									<option value="5">이메일</option>
-									<option value="6">탈퇴여부</option>
-								</select>
+							<br>
+							<div class="container box">
+								<br>
+								<div class="container wid6">
+									<div class="row">
+										<div class="col-4">
+											<input type="text" class="form-control mid wid3" aria-label="accessdate" aria-describedby="basic-addon1" value="최근접속일" readonly>
+										</div>
+										<div class="col-4">
+											<input type="date" class="form-control mid wid4" aria-label="date" aria-describedby="basic-addon1">
+										</div>
+										<div class="col-4">
+											<input type="date" class="form-control mid wid4" aria-label="date" aria-describedby="basic-addon1">
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="col-4">
+										<select class="form-select wid3" aria-label="Default select example">
+											<option selected class="mid">::검색 조건::</option>
+											<option value="1">회원번호</option>
+											<option value="2">회원등급</option>
+											<option value="3">이름</option>
+											<option value="4">성별</option>
+											<option value="5">이메일</option>
+											<option value="6">탈퇴여부</option>
+										</select>
+										</div>
+										<div class="col-6">
+											<input type="text" class="form-control mid wid5" aria-label="date" aria-describedby="basic-addon1" placeholder="검색어 입력">
+										</div>
+										<div class="col-2">
+											<a class="btn btn1 btn-space" role="button" style="margin-left: 10px;"><i class="fa-solid fa-arrow-rotate-left"></i></a> 
+											<a class="btn btn1 btn-space" role="button"><i class="fa-solid fa-magnifying-glass"></i></a>
+										</div>
+									</div>
 								</div>
-								<div class="col-6">
-									<input type="text" class="form-control mid wid5" aria-label="date" aria-describedby="basic-addon1" placeholder="검색어 입력">
-								</div>
-								<div class="col-2">
-									<a class="btn btn1 btn-space" role="button" style="margin-left: 10px;"><i class="fa-solid fa-arrow-rotate-left"></i></a> 
-									<a class="btn btn1 btn-space" role="button"><i class="fa-solid fa-magnifying-glass"></i></a>
-								</div>
+								<br>
 							</div>
 						</div>
 						<br>
-					</div>
+						<br>
+						<br>
+						<div class="container wid7">
+							<table class="table table-striped table-hover">
+								<thead>
+							  		<tr>
+							  			<th><input type="checkbox" id="chkAll" name="chkAll"></th>
+										<th>회원번호</th>
+										<th>회원등급</th>
+										<th>이름</th>
+										<th>성별</th>
+										<th>연락처</th>
+										<th>이메일</th>
+										<th>최근접속일</th>
+										<th>탈퇴여부</th>
+									</tr>
+								</thead>
+								<tbody class="table-group-divider">
+									<tr class="cursor" onClick="mem()">
+										<td onClick="event.cancelBubble = true"><input class="form-check-input" type="checkbox" name="chk"></td>
+										<td>45</td>
+										<td>핑크올리브</td>
+										<td>최유진</td>
+										<td>여성</td>
+										<td>010-1111-1111</td>
+										<td>cuj0405@naver.com</td>
+										<td>2022.07.14</td>
+										<td>N</td>
+									</tr>
+									<tr>
+										<td><input class="form-check-input" type="checkbox" name="chk"></td>
+										<td>23</td>
+										<td>베이비올리브</td>
+										<td>한민규</td>
+										<td>남성</td>
+										<td>010-2222-2222</td>
+										<td>gpawnl@gmail.com</td>
+										<td>2022.07.11</td>
+										<td>N</td>
+									</tr>
+									<tr>
+										<td><input class="form-check-input" type="checkbox" name="chk"></td>
+										<td>39</td>
+										<td>골드올리브</td>
+										<td>신한별</td>
+										<td>여성</td>
+										<td>010-3333-3333</td>
+										<td>dpffl@naver.com</td>
+										<td>2022.07.28</td>
+										<td>N</td>
+									</tr>
+									<tr>
+										<td><input class="form-check-input" type="checkbox" name="chk"></td>
+										<td>174</td>
+										<td>베이비올리브</td>
+										<td>남세은</td>
+										<td>여성</td>
+										<td>010-4444-4444</td>
+										<td>tmdl@naver.com</td>
+										<td>2022.06.30</td>
+										<td>N</td>
+									</tr>
+									<tr>
+										<td><input class="form-check-input" type="checkbox" name="chk"></td>
+										<td>54</td>
+										<td>골드올리브</td>
+										<td>이효성</td>
+										<td>남성</td>
+										<td>010-5555-5555</td>
+										<td>gustn@gmail.com</td>
+										<td>2022.08.14</td>
+										<td>N</td>
+									</tr>
+									<tr>
+										<td><input class="form-check-input" type="checkbox" name="chk"></td>
+										<td>17</td>
+										<td>핑크올리브</td>
+										<td>조광훈</td>
+										<td>남성</td>
+										<td>010-6666-6666</td>
+										<td>rhkdgns@naver.com</td>
+										<td>2022.06.24</td>
+										<td>N</td>
+									</tr>
+									<tr>
+										<td><input class="form-check-input" type="checkbox" name="chk"></td>
+										<td>87</td>
+										<td>그린올리브</td>
+										<td>김정윤</td>
+										<td>여성</td>
+										<td>010-7777-7777</td>
+										<td>wjddn@naver.com</td>
+										<td>2022.07.22</td>
+										<td>N</td>
+									</tr>
+									<tr>
+										<td><input class="form-check-input" type="checkbox" name="chk"></td>
+										<td>8</td>
+										<td>베이비올리브</td>
+										<td>김현지</td>
+										<td>여성</td>
+										<td>010-8888-8888</td>
+										<td>tnrud@gmail.com</td>
+										<td>2022.06.18</td>
+										<td>N</td>
+									</tr>
+									<tr>
+										<td><input class="form-check-input" type="checkbox" name="chk"></td>
+										<td>165</td>
+										<td>그린올리브</td>
+										<td>안효재</td>
+										<td>남성</td>
+										<td>010-9999-9999</td>
+										<td>gyfla@naver.com</td>
+										<td>2022.07.23</td>
+										<td>N</td>
+									</tr>
+									<tr>
+										<td><input class="form-check-input" type="checkbox" name="chk"></td>
+										<td>92</td>
+										<td>블랙올리브</td>
+										<td>정유리</td>
+										<td>여성</td>
+										<td>010-1234-5678</td>
+										<td>dbfl@gmail.com</td>
+										<td>2022.05.19</td>
+										<td>N</td>
+									</tr>
+								</tbody>
+							</table>
+							<br>
+							<nav aria-label="...">
+								<ul class="pagination justify-content-center">
+									<li class="page-item active" aria-current="page">
+										<span class="page-link">1</span>
+									</li>
+								</ul>
+							</nav>
+							<br>
+							<a class="btn btn2 btn-space" role="button"><i class="fa-solid fa-trash-can"></i></a>							
+							<a class="btn btn2 btn-space" role="button"><i class="fa-solid fa-plus"></i></a> 
+							<br>
+							<br>
+							<br>
+						</div>
+					</section>
 				</div>
-				<br>
-				<br>
-				<br>
-				<div class="container wid7">
-					<table class="table table-striped table-hover">
-						<thead>
-					  		<tr>
-					  			<th><input type="checkbox" id="chkAll" name="chkAll"></th>
-								<th>회원번호</th>
-								<th>회원등급</th>
-								<th>이름</th>
-								<th>성별</th>
-								<th>연락처</th>
-								<th>이메일</th>
-								<th>최근접속일</th>
-								<th>탈퇴여부</th>
-							</tr>
-						</thead>
-						<tbody class="table-group-divider">
-							<tr class="cursor" onClick="mem()">
-								<td onClick="event.cancelBubble = true"><input class="form-check-input" type="checkbox" name="chk"></td>
-								<td>45</td>
-								<td>핑크올리브</td>
-								<td>최유진</td>
-								<td>여성</td>
-								<td>010-1111-1111</td>
-								<td>cuj0405@naver.com</td>
-								<td>2022.07.14</td>
-								<td>N</td>
-							</tr>
-							<tr>
-								<td><input class="form-check-input" type="checkbox" name="chk"></td>
-								<td>23</td>
-								<td>베이비올리브</td>
-								<td>한민규</td>
-								<td>남성</td>
-								<td>010-2222-2222</td>
-								<td>gpawnl@gmail.com</td>
-								<td>2022.07.11</td>
-								<td>N</td>
-							</tr>
-							<tr>
-								<td><input class="form-check-input" type="checkbox" name="chk"></td>
-								<td>39</td>
-								<td>골드올리브</td>
-								<td>신한별</td>
-								<td>여성</td>
-								<td>010-3333-3333</td>
-								<td>dpffl@naver.com</td>
-								<td>2022.07.28</td>
-								<td>N</td>
-							</tr>
-							<tr>
-								<td><input class="form-check-input" type="checkbox" name="chk"></td>
-								<td>174</td>
-								<td>베이비올리브</td>
-								<td>남세은</td>
-								<td>여성</td>
-								<td>010-4444-4444</td>
-								<td>tmdl@naver.com</td>
-								<td>2022.06.30</td>
-								<td>N</td>
-							</tr>
-							<tr>
-								<td><input class="form-check-input" type="checkbox" name="chk"></td>
-								<td>54</td>
-								<td>골드올리브</td>
-								<td>이효성</td>
-								<td>남성</td>
-								<td>010-5555-5555</td>
-								<td>gustn@gmail.com</td>
-								<td>2022.08.14</td>
-								<td>N</td>
-							</tr>
-							<tr>
-								<td><input class="form-check-input" type="checkbox" name="chk"></td>
-								<td>17</td>
-								<td>핑크올리브</td>
-								<td>조광훈</td>
-								<td>남성</td>
-								<td>010-6666-6666</td>
-								<td>rhkdgns@naver.com</td>
-								<td>2022.06.24</td>
-								<td>N</td>
-							</tr>
-							<tr>
-								<td><input class="form-check-input" type="checkbox" name="chk"></td>
-								<td>87</td>
-								<td>그린올리브</td>
-								<td>김정윤</td>
-								<td>여성</td>
-								<td>010-7777-7777</td>
-								<td>wjddn@naver.com</td>
-								<td>2022.07.22</td>
-								<td>N</td>
-							</tr>
-							<tr>
-								<td><input class="form-check-input" type="checkbox" name="chk"></td>
-								<td>8</td>
-								<td>베이비올리브</td>
-								<td>김현지</td>
-								<td>여성</td>
-								<td>010-8888-8888</td>
-								<td>tnrud@gmail.com</td>
-								<td>2022.06.18</td>
-								<td>N</td>
-							</tr>
-							<tr>
-								<td><input class="form-check-input" type="checkbox" name="chk"></td>
-								<td>165</td>
-								<td>그린올리브</td>
-								<td>안효재</td>
-								<td>남성</td>
-								<td>010-9999-9999</td>
-								<td>gyfla@naver.com</td>
-								<td>2022.07.23</td>
-								<td>N</td>
-							</tr>
-							<tr>
-								<td><input class="form-check-input" type="checkbox" name="chk"></td>
-								<td>92</td>
-								<td>블랙올리브</td>
-								<td>정유리</td>
-								<td>여성</td>
-								<td>010-1234-5678</td>
-								<td>dbfl@gmail.com</td>
-								<td>2022.05.19</td>
-								<td>N</td>
-							</tr>
-						</tbody>
-					</table>
-					<br>
-					<nav aria-label="...">
-						<ul class="pagination justify-content-center">
-							<li class="page-item active" aria-current="page">
-								<span class="page-link">1</span>
-							</li>
-						</ul>
-					</nav>
-					<br>
-					<a class="btn btn2 btn-space" role="button"><i class="fa-solid fa-trash-can"></i></a>							
-					<a class="btn btn2 btn-space" role="button"><i class="fa-solid fa-plus"></i></a> 
-					<br>
-					<br>
-					<br>
-				</div>
-			</section>
-			
+			</div>
 		</div>
 	</div> 	
 	
