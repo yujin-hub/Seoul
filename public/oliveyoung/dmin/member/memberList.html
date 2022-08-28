@@ -40,7 +40,7 @@
 		}
 		
 		.wid{
-			width: 1200px;
+			width: 1150px;
 		}
 		
 		.wid2{
@@ -158,7 +158,21 @@
 		.cursor{
 			cursor: pointer;
 		}
-		 
+		
+		.font{
+			font-size: 23px;
+		}
+		
+		.nav-link{
+			color: #353535;;
+			font-size: 16px;
+			font-weight: bold;	
+		}
+		
+		.nav-link:hover {
+			color: #ce63be;
+		}
+		
 	</style>
 </head>
     
@@ -170,12 +184,12 @@
 			<ul class="menu_list" id="menu_list_header">
 				<li class="join"><a href="../../user/member/regForm.html" data-attr='공통^헤더^회원가입'>회원가입</a></li>
 				<li class="login"><a href="../../user/member/loginForm.html" data-attr='공통^헤더^로그인'>로그인</a></li>
-				<li class="cart"><a href="memberList.html"data-attr='공통^헤더^장바구니'>회원관리<span id="cartToCnt"></span></a></li>
+				<li class="cart"><a href="memberList.html"data-attr='공통^헤더^장바구니'>관리 홈<span id="cartToCnt"></span></a></li>
 			</ul>
 		</div>
 		
 		<form autocomplete="off">
-			<div class="header_inner" >
+			<div class="header_inner">
 	            <h1><a href="../../user/item/itemList.html"><img src="https://image.oliveyoung.co.kr/pc-static-root/image/comm/h1_logo.png" alt="올리브영"></a></h1>
 				<div class="search_box" id="w_search_box">
 					<input type="hidden" name="chkButton" id="chkButton">		
@@ -292,18 +306,19 @@
 	<br>
 	<div class="container wid">
 		<div class="row">
-			<div class="col-2">
-				<span>Setting</span>
+			<div class="col-2 right">
+				<span class="font">Setting</span>
+				<br>
 				<br>
 				<ul class="nav flex-column">
 					<li class="nav-item">
 						<a class="nav-link" href="memberlist.html">회원 관리</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="memberlist.html">상품 관리</a>
+						<a class="nav-link" href="../item/itemlist.html">상품 관리</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="memberlist.html">주문 관리</a>
+						<a class="nav-link" href="../order/orderList.html">주문 관리</a>
 					</li>
 				</ul>
 			</div>
