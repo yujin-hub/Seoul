@@ -309,7 +309,6 @@
 			<div class="col-2 right">
 				<span class="font">Setting</span>
 				<br>
-				<br>
 				<ul class="nav flex-column">
 					<li class="nav-item">
 						<a class="nav-link" href="../member/memberlist.html">회원 관리</a>
@@ -319,6 +318,16 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="../order/orderList.html">주문 관리</a>
+					</li>
+				<br>
+				<br>
+				<span class="font">Code</span>
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="#">코드 그룹 관리</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">코드 관리</a>
 					</li>
 				</ul>
 			</div>
@@ -343,7 +352,7 @@
 								<div class="container wid6">
 									<div class="row">
 										<div class="col-4">
-											<input type="text" class="form-control mid wid3" aria-label="accessdate" aria-describedby="basic-addon1" value="최근접속일" readonly>
+											<input type="text" class="form-control mid wid3" aria-label="accessdate" aria-describedby="basic-addon1" value="상품등록일" readonly>
 										</div>
 										<div class="col-4">
 											<input type="date" class="form-control mid wid4" aria-label="date" aria-describedby="basic-addon1">
@@ -357,12 +366,12 @@
 										<div class="col-4">
 										<select class="form-select wid3" aria-label="Default select example">
 											<option selected class="mid">::검색 조건::</option>
-											<option value="1">회원번호</option>
-											<option value="2">회원등급</option>
-											<option value="3">이름</option>
-											<option value="4">성별</option>
-											<option value="5">이메일</option>
-											<option value="6">탈퇴여부</option>
+											<option value="1">브랜드</option>
+											<option value="2">상품명</option>
+											<option value="3">원가</option>
+											<option value="4">판매가</option>
+											<option value="5">총 구매수량</option>
+											<option value="6">재고</option>
 										</select>
 										</div>
 										<div class="col-6">
@@ -385,126 +394,126 @@
 								<thead>
 							  		<tr>
 							  			<th><input type="checkbox" id="chkAll" name="chkAll"></th>
-										<th>회원번호</th>
-										<th>회원등급</th>
-										<th>이름</th>
-										<th>성별</th>
-										<th>연락처</th>
-										<th>이메일</th>
-										<th>최근접속일</th>
-										<th>탈퇴여부</th>
+										<th>NO</th>
+										<th>브랜드</th>
+										<th>상품명</th>
+										<th>원가</th>
+										<th>판매가</th>
+										<th>상품등록일</th>
+										<th>총 구매수량</th>
+										<th>재고</th>
 									</tr>
 								</thead>
 								<tbody class="table-group-divider">
-									<tr class="cursor" onClick="mem()">
+									<tr class="cursor" onClick="">
 										<td onClick="event.cancelBubble = true"><input class="form-check-input" type="checkbox" name="chk"></td>
-										<td>45</td>
-										<td>핑크올리브</td>
-										<td>최유진</td>
-										<td>여성</td>
-										<td>010-1111-1111</td>
-										<td>cuj0405@naver.com</td>
-										<td>2022.07.14</td>
-										<td>N</td>
+										<td>1</td>
+										<td>클리오</td>
+										<td>클리오 프로아이팔레트 MD</td>
+										<td>32,000원</td>
+										<td>22,400원</td>
+										<td>2021-05-21</td>
+										<td>54,846개</td>
+										<td>Y</td>
 									</tr>
 									<tr>
 										<td><input class="form-check-input" type="checkbox" name="chk"></td>
-										<td>23</td>
-										<td>베이비올리브</td>
-										<td>한민규</td>
-										<td>남성</td>
-										<td>010-2222-2222</td>
-										<td>gpawnl@gmail.com</td>
-										<td>2022.07.11</td>
-										<td>N</td>
+										<td>2</td>
+										<td>롬앤</td>
+										<td>롬앤 쥬시 래스팅 틴트</td>
+										<td>9,900원</td>
+										<td>8,910원</td>
+										<td>2021-08-06</td>
+										<td>41,231개</td>
+										<td>Y</td>
 									</tr>
 									<tr>
 										<td><input class="form-check-input" type="checkbox" name="chk"></td>
-										<td>39</td>
-										<td>골드올리브</td>
-										<td>신한별</td>
-										<td>여성</td>
-										<td>010-3333-3333</td>
-										<td>dpffl@naver.com</td>
-										<td>2022.07.28</td>
-										<td>N</td>
+										<td>3</td>
+										<td>웨이크메이크</td>
+										<td>웨이크메이크 워터 컬러링 퓨어 틴트<br>(6 Color)</td>
+										<td>16,000원</td>
+										<td>9,600원</td>
+										<td>2021-07-28</td>
+										<td>31,454개</td>
+										<td>Y</td>
 									</tr>
 									<tr>
 										<td><input class="form-check-input" type="checkbox" name="chk"></td>
-										<td>174</td>
-										<td>베이비올리브</td>
-										<td>남세은</td>
-										<td>여성</td>
-										<td>010-4444-4444</td>
-										<td>tmdl@naver.com</td>
-										<td>2022.06.30</td>
-										<td>N</td>
+										<td>4</td>
+										<td>리얼베리어</td>
+										<td>리얼베리어 아쿠아 수딩 크림 마스크</td>
+										<td>3,000원</td>
+										<td>1,200원</td>
+										<td>2021-02-05</td>
+										<td>5,453개</td>
+										<td>Y</td>
 									</tr>
 									<tr>
 										<td><input class="form-check-input" type="checkbox" name="chk"></td>
-										<td>54</td>
-										<td>골드올리브</td>
-										<td>이효성</td>
-										<td>남성</td>
-										<td>010-5555-5555</td>
-										<td>gustn@gmail.com</td>
-										<td>2022.08.14</td>
-										<td>N</td>
+										<td>5</td>
+										<td>데싱디바</td>
+										<td>데싱디바 매직프레스 페디 사일런트 오션 2205</td>
+										<td>10,800원</td>
+										<td>9,720원</td>
+										<td>2022-06-15</td>
+										<td>1,532개</td>
+										<td>Y</td>
 									</tr>
 									<tr>
 										<td><input class="form-check-input" type="checkbox" name="chk"></td>
-										<td>17</td>
-										<td>핑크올리브</td>
-										<td>조광훈</td>
-										<td>남성</td>
-										<td>010-6666-6666</td>
-										<td>rhkdgns@naver.com</td>
-										<td>2022.06.24</td>
-										<td>N</td>
+										<td>6</td>
+										<td>페리페라</td>
+										<td>페리페라 올테이크 무드 팔레트</td>
+										<td>19,000원</td>
+										<td>15,200원</td>
+										<td>2021-11-30</td>
+										<td>2,155개</td>
+										<td>Y</td>
 									</tr>
 									<tr>
 										<td><input class="form-check-input" type="checkbox" name="chk"></td>
-										<td>87</td>
-										<td>그린올리브</td>
-										<td>김정윤</td>
-										<td>여성</td>
-										<td>010-7777-7777</td>
-										<td>wjddn@naver.com</td>
-										<td>2022.07.22</td>
-										<td>N</td>
+										<td>7</td>
+										<td>CK</td>
+										<td>CK 캘빈클라인 One EDT 50ml + 미니어처 <br> 15ml 기획</td>
+										<td>60,000원</td>
+										<td>60,000원</td>
+										<td>2020-12-04</td>
+										<td>4,487개</td>
+										<td>Y</td>
 									</tr>
 									<tr>
 										<td><input class="form-check-input" type="checkbox" name="chk"></td>
 										<td>8</td>
-										<td>베이비올리브</td>
-										<td>김현지</td>
-										<td>여성</td>
-										<td>010-8888-8888</td>
-										<td>tnrud@gmail.com</td>
-										<td>2022.06.18</td>
-										<td>N</td>
+										<td>CK</td>
+										<td>CK 캘빈클라인 디파이 EDT 30ml</td>
+										<td>71,000원</td>
+										<td>71,000원</td>
+										<td>2020-12-04</td>
+										<td>1,255개</td>
+										<td>Y</td>
 									</tr>
 									<tr>
 										<td><input class="form-check-input" type="checkbox" name="chk"></td>
-										<td>165</td>
-										<td>그린올리브</td>
-										<td>안효재</td>
-										<td>남성</td>
-										<td>010-9999-9999</td>
-										<td>gyfla@naver.com</td>
-										<td>2022.07.23</td>
-										<td>N</td>
+										<td>9</td>
+										<td>CK</td>
+										<td>CK 캘빈클라인 원 모이스처라이저 250ml</td>
+										<td>53,000원</td>
+										<td>42,400원</td>
+										<td>2020-12-05</td>
+										<td>1,548개</td>
+										<td>Y</td>
 									</tr>
 									<tr>
 										<td><input class="form-check-input" type="checkbox" name="chk"></td>
-										<td>92</td>
-										<td>블랙올리브</td>
-										<td>정유리</td>
-										<td>여성</td>
-										<td>010-1234-5678</td>
-										<td>dbfl@gmail.com</td>
-										<td>2022.05.19</td>
-										<td>N</td>
+										<td>10</td>
+										<td>CK</td>
+										<td>CK 캘빈클라인 에브리원 EDT 100ml</td>
+										<td>90,000원</td>
+										<td>90,000원</td>
+										<td>2021-10-13</td>
+										<td>2,148개</td>
+										<td>Y</td>
 									</tr>
 								</tbody>
 							</table>
