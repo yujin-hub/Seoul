@@ -12,7 +12,7 @@
 	<meta property="og:title" content="올리브영 공식 온라인몰">
 	<meta property="og:description" content="대한민국 NO.1 헬스&뷰티 스토어 OLIVEYOUNG" >
 
-	<title>클리오 프로아이팔레트 AD</title>
+	<title>클리오 프로아이팔레트 AD(set)</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.oliveyoung.co.kr/pc-static-root/css/style.css?dumm=202207250001">
     <link rel="shortcut icon" type="image/x-icon" href="https://cdn.icon-icons.com/icons2/236/PNG/256/Fruit_Olive_Green_26369.png"> 
@@ -276,6 +276,11 @@
 			font-weight: bold;
 		}
 		
+		.btn-light{
+			font-size: 16px;
+			margin-top: 7px;
+		}
+		
     </style>
 </head>
     
@@ -287,7 +292,7 @@
 			<ul class="menu_list" id="menu_list_header">
 				<li class="join"><a href="../member/regForm.html" data-attr='공통^헤더^회원가입'>회원가입</a></li>
 				<li class="login"><a href="../member/loginForm.html" data-attr='공통^헤더^로그인'>로그인</a></li>
-				<li class="cart"><a href="../member/mypage.html"data-attr='공통^헤더^장바구니'>마이페이지<span id="cartToCnt"></span></a></li>
+				<li class="cart"><a href="../member/memberList.html"data-attr='공통^헤더^장바구니'>관리 홈<span id="cartToCnt"></span></a></li>
 			</ul>
 		</div>
 		<form autocomplete="off">
@@ -482,8 +487,8 @@
 			
 			<section id="content1">
 				<center>
-					<img src="../image/detail.jpg" id="pic">
-					<img src="../image/detail2.jpg" id="pic">
+					<img src="../../user/image/detail.jpg" id="pic">
+					<img src="../../user/image/detail2.jpg" id="pic">
 				</center>
 			</section>
 			
@@ -494,10 +499,10 @@
 			<section id="content3">
 				<div class="row">
 					<div class="col-7">
-	 				<span class="notice">★ 상품 문의사항이 아닌 반품/교환관련 문의는 고객센터 1:1 문의를 이용해주세요.</span>
+	 					<span class="notice">★ 상품 문의사항이 아닌 반품/교환관련 문의는 고객센터 1:1 문의를 이용해주세요.</span>
 	 				</div>
 	 				<div class="col-5">
-	 				<button type="button" class="btn btn-f" style="float: right; width: 120px;" onClick="qna()"><i class="fa-solid fa-pen-clip"></i> 상품문의</button>
+	 					<button type="button" class="btn btn-f" style="float: right; width: 120px;" onClick="qna()"><i class="fa-solid fa-pen-clip"></i> 상품문의</button>
 	 				</div>
 			 	</div>
 			 	<br>
@@ -525,6 +530,17 @@
 								<br>
 								<hr class="hr">
 								<br>
+								<div class="row">
+									<div class="col-1">
+										<span class="a">A</span>
+									</div>
+									<div class="col-10">
+										<textarea class="form-control" aria-label="With textarea" placeholder="답변 등록 시 수정이 불가하니 신중히 작성해주시기 바랍니다!"></textarea>
+									</div>
+									<div class="col-1">
+										<button type="button" class="btn btn-light">등록</button>
+									</div>
+								</div>		
 							</div>
 						</div>
 					</div>
@@ -550,6 +566,17 @@
 								<br>
 								<hr class="hr">
 								<br>
+								<div class="row">
+									<div class="col-1">
+										<span class="a">A</span>
+									</div>
+									<div class="col-10">
+										<textarea class="form-control" aria-label="With textarea" placeholder="답변 등록 시 수정이 불가하니 신중히 작성해주시기 바랍니다!"></textarea>
+									</div>
+									<div class="col-1">
+										<button type="button" class="btn btn-light">등록</button>
+									</div>
+								</div>		
 							</div>
 						</div>
 					</div>
@@ -558,7 +585,8 @@
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
 								<span class="badge rounded-pill" style="background-color: #E85858;">답변완료</span> 
 								&nbsp;&nbsp; 지금 사면 언제쯤 배송완료 되나요..?
-							   	<span class="nick">t** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2022.07.25</span>							</button>
+							   	<span class="nick">t** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2022.07.25</span>							
+							</button>
 						</h2>
 						<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
 							<div class="accordion-body">
