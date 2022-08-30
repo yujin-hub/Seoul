@@ -409,9 +409,8 @@
 								<div class="col-1">
 									<select class="form-select form-select-sm" aria-label="Default select example">
 										<option selected>10</option>
-										<option value="1">10</option>
-										<option value="2">15</option>
-										<option value="3">20</option>
+										<option value="1">15</option>
+										<option value="2">20</option>
 									</select>
 								</div>
 							</div>
@@ -430,7 +429,7 @@
 									</tr>
 								</thead>
 								<tbody class="table-group-divider">
-									<tr class="cursor">
+									<tr class="cursor" onClick="form()">
 										<td onClick="event.cancelBubble = true"><input class="form-check-input" type="checkbox" name="chk"></td>
 										<td>1</td>
 										<td>1</td>
@@ -650,6 +649,11 @@
 	 function mem()
 		{
 		     location.href = "memberView.html";
+		}
+	 
+	 function form()
+		{
+		     location.href = "codeGroupForm.html";
 		}
 	 
 </script>
