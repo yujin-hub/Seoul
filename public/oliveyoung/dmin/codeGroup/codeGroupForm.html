@@ -55,6 +55,16 @@
 			float: right;
 		}
 		
+		.nav-link{
+			color: #353535;;
+			font-size: 16px;
+			font-weight: bold;	
+		}
+		
+		.nav-link:hover {
+			color: #ce63be;
+		}
+		
 	</style>
 </head>
     
@@ -213,105 +223,97 @@
 					</li>
 				</ul>
 			</div>
-		</div>
-	<div class="container wid">
-		<div class="row">
-			<div class="col-6">
-				<label for="useNY" class="form-label">사용여부</label>
-				<select class="form-select" aria-label="Default select example">
-					<option selected>선택하세요</option>
-					<option value="1">Y</option>
-					<option value="2">N</option>
-				</select>
-			</div>
-			<div class="col-6">
-			</div>
-			<div class="col-6">
+			<div class="col-10">
+				<div class="row">
+					<div class="col-6">
+						<br>
+						<label for="code" class="form-label">코드그룹 코드</label>
+						<input type="text" class="form-control" aria-label="codeA" aria-describedby="basic-addon1" placeholder="영문(대소문자), 숫자">
+					</div>
+					<div class="col-6">
+						<br>
+						<label for="codeA" class="form-label">코드그룹 코드 (Another)</label>
+						<input type="text" class="form-control" aria-label="codeA" aria-describedby="basic-addon1" placeholder="영문(대소문자), 숫자">
+					</div>
+					<div class="col-6">
+						<br>
+						<label for="codename" class="form-label">코드그룹 이름(한글)</label>
+						<input type="text" class="form-control" aria-label="codename" aria-describedby="basic-addon1" placeholder="한글, 숫자">
+					</div>
+					<div class="col-6">
+						<br>
+						<label for="codenameEng" class="form-label">코드그룹 이름 (영문)</label>
+						<input type="text" class="form-control" aria-label="codenameEng" aria-describedby="basic-addon1" placeholder="영문(대소문자), 숫자">
+					</div>
+					<div class="col-6">
+						<br>
+						<label for="useNY2" class="form-label">사용여부</label>
+						<select class="form-select" aria-label="Default select example">
+							<option selected>Y</option>
+							<option value="2">N</option>
+						</select>
+					</div>
+					<div class="col-6">
+						<br>
+						<label for="order" class="form-label">순서</label>
+						<input type="text" class="form-control" aria-label="order" aria-describedby="basic-addon1" placeholder="숫자">
+					</div>
+					<div class="col-6">
+						<br>
+						<label for="desc" class="form-label">설명</label>
+						<textarea class="form-control" aria-label="With textarea"></textarea>
+					</div>
+					<div class="col-6">
+						<br>
+						<label for="useNY2" class="form-label">삭제여부</label>
+						<select class="form-select" aria-label="Default select example">
+							<option selected>N</option>
+							<option value="2">Y</option>
+						</select>
+					</div>
+					<div class="col-6">
+						<br>
+						<label for="pre1" class="form-label">예비1 (varchar type)</label>
+						<input type="text" class="form-control" aria-label="pre1" aria-describedby="basic-addon1" placeholder="영문(대소문자), 숫자">
+					</div>
+					<div class="col-6">
+						<br>
+						<label for="pre2" class="form-label">예비2 (varchar type)</label>
+						<input type="text" class="form-control" aria-label="pre2" aria-describedby="basic-addon1" placeholder="영문(대소문자), 숫자">
+					</div>
+					<div class="col-6">
+						<br>
+						<label for="pre3" class="form-label">예비3 (varchar type)</label>
+						<input type="text" class="form-control" aria-label="pre3" aria-describedby="basic-addon1" placeholder="영문(대소문자), 숫자">
+					</div>
+					<div class="col-6">
+					</div>
+					<div class="col-6">
+						<br>
+						<label for="intpre1" class="form-label">예비1 (int type)</label>
+						<input type="text" class="form-control" aria-label="intpre1" aria-describedby="basic-addon1" placeholder="숫자">
+					</div>
+					<div class="col-6">
+						<br>
+						<label for="intpre2" class="form-label">예비2 (int type)</label>
+						<input type="text" class="form-control" aria-label="intpre2" aria-describedby="basic-addon1" placeholder="숫자">
+					</div>
+					<div class="col-6">
+						<br>
+						<label for="intpre3" class="form-label">예비3 (int type)</label>
+						<input type="text" class="form-control" aria-label="intpre3" aria-describedby="basic-addon1" placeholder="숫자">
+					</div>
+					<div class="col-6">
+					</div>
+				</div>
 				<br>
-				<label for="code" class="form-label">코드그룹</label>
-				<input type="text" class="form-control" aria-label="code" aria-describedby="basic-addon1" value="자동생성" readonly>
-			</div>
-			<div class="col-6">
 				<br>
-				<label for="codeA" class="form-label">코드그룹 이름 (Another)</label>
-				<input type="text" class="form-control" aria-label="codeA" aria-describedby="basic-addon1">
-			</div>
-			<div class="col-6">
-				<br>
-				<label for="codename" class="form-label">코드그룹 이름(한글)</label>
-				<input type="text" class="form-control" aria-label="codename" aria-describedby="basic-addon1">
-			</div>
-			<div class="col-6">
-				<br>
-				<label for="codenameEng" class="form-label">코드그룹 이름 (영문)</label>
-				<input type="text" class="form-control" aria-label="codenameEng" aria-describedby="basic-addon1">
-			</div>
-			<div class="col-6">
-				<br>
-				<label for="useNY2" class="form-label">사용여부</label>
-				<select class="form-select" aria-label="Default select example">
-					<option selected>Y</option>
-					<option value="2">N</option>
-				</select>
-			</div>
-			<div class="col-6">
-				<br>
-				<label for="order" class="form-label">순서</label>
-				<input type="text" class="form-control" aria-label="order" aria-describedby="basic-addon1">
-			</div>
-			<div class="col-6">
-				<br>
-				<label for="desc" class="form-label">설명</label>
-				<textarea class="form-control" aria-label="With textarea"></textarea>
-			</div>
-			<div class="col-6">
-				<br>
-				<label for="useNY2" class="form-label">삭제여부</label>
-				<select class="form-select" aria-label="Default select example">
-					<option selected>N</option>
-					<option value="2">Y</option>
-				</select>
-			</div>
-			<div class="col-6">
-				<br>
-				<label for="pre1" class="form-label">예비1 (varchar type)</label>
-				<input type="text" class="form-control" aria-label="pre1" aria-describedby="basic-addon1">
-			</div>
-			<div class="col-6">
-				<br>
-				<label for="pre2" class="form-label">예비2 (varchar type)</label>
-				<input type="text" class="form-control" aria-label="pre2" aria-describedby="basic-addon1">
-			</div>
-			<div class="col-6">
-				<br>
-				<label for="pre3" class="form-label">예비3 (varchar type)</label>
-				<input type="text" class="form-control" aria-label="pre3" aria-describedby="basic-addon1">
-			</div>
-			<div class="col-6">
-			</div>
-			<div class="col-6">
-				<br>
-				<label for="intpre1" class="form-label">예비1 (int type)</label>
-				<input type="text" class="form-control" aria-label="intpre1" aria-describedby="basic-addon1">
-			</div>
-			<div class="col-6">
-				<br>
-				<label for="intpre2" class="form-label">예비2 (int type)</label>
-				<input type="text" class="form-control" aria-label="intpre2" aria-describedby="basic-addon1">
-			</div>
-			<div class="col-6">
-				<br>
-				<label for="intpre3" class="form-label">예비3 (int type)</label>
-				<input type="text" class="form-control" aria-label="intpre3" aria-describedby="basic-addon1">
-			</div>
-			<div class="col-6">
+				<a class="btn btn-secondary" role="button" onClick="list()"><i class="fa-solid fa-list-ul"></i></a>
+				<a class="btn btn-space btn-success right" role="button"><i class="fa-solid fa-bookmark"></i></a>		
+				<a class="btn btn-space btn-danger right" role="button"><i class="fa-solid fa-trash-can"></i></a>			
+				<a class="btn btn-space btn-danger right" role="button"><i class="fa-solid fa-x"></i></a> 
 			</div>
 		</div>
-		<br>
-		<a class="btn btn-secondary" role="button"><i class="fa-solid fa-list-ul"></i></a>
-		<a class="btn btn-space btn-success right" role="button"><i class="fa-solid fa-bookmark"></i></a>		
-		<a class="btn btn-space btn-danger right" role="button"><i class="fa-solid fa-trash-can"></i></a>			
-		<a class="btn btn-space btn-danger right" role="button"><i class="fa-solid fa-x"></i></a> 
 		<br>
 		<br>
 	</div>
@@ -409,6 +411,11 @@
 	 function mem()
 		{
 		     location.href = "memberView.html";
+		}
+	 
+	 function list()
+		{
+		     location.href = "codeGroupList.html";
 		}
 	 
 </script>
