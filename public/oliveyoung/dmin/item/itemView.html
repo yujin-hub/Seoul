@@ -127,6 +127,23 @@
 			margin-left: 15px;
 		}
 		
+		.form-label {
+		    margin-bottom: 0;
+		    padding: 5px;
+		    color: #595959;
+		    font-size: 17px;
+		}
+		
+		.left{
+			margin-left: 5px;
+		}
+		
+		.form-control:disabled, .form-control[readonly] {
+		    background-color: #ffffff;
+		    color: #757575;
+		    font-size: 15px;
+		}
+		
 	</style>
 </head>
     
@@ -299,6 +316,39 @@
 						<div class="container">
 							<span class="font1">상품 등록 정보</span>
 							<br>
+							<br>
+							<div class="row">
+								<div class="col-3">
+									<label for="name" class="form-label">대표 이미지(썸네일)</label>
+									<br>
+									<img src="../image/winter.jpg" class="left">
+								</div>
+								<div class="col-9">
+									<br>
+									<br>
+									<label for="grade" class="form-label">상품 브랜드</label>
+									<input class="form-control" type="text" value="클리오" aria-label="readonly input example" readonly>
+									<br>
+									<label for="grade" class="form-label">상품명</label>
+									<input class="form-control" type="text" value="[에스파 윈터 PICK!] 클리오 프로아이팔레트 MD" aria-label="readonly input example" readonly>
+									<br>
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-4">
+									<label for="grade" class="form-label">원가</label>
+									<input class="form-control" type="text" value="32,000원" aria-label="readonly input example" readonly>
+								</div>
+								<div class="col-4">
+									<label for="grade" class="form-label">판매가</label>
+									<input class="form-control" type="text" value="22,400원" aria-label="readonly input example" readonly>
+								</div>
+								<div class="col-4">
+									<label for="grade" class="form-label">할인율</label>
+									<input class="form-control" type="text" value="30%" aria-label="readonly input example" readonly>
+								</div>
+							</div>
 						</div>
 					</section>
 				</div>
